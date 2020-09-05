@@ -1,0 +1,131 @@
+html{
+    height: 690px;
+}
+body{
+    height: 690px;
+    margin: 0px;
+}
+#test1{
+    background-color: black;
+    position: relative;
+    left: 0px;
+    bottom: 30px;
+    width: 1800px;
+    height: 710px;
+}
+.test1-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+.txt1{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head1{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+
+
+
+#test2{
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    left: 1800px;
+    bottom: 770px;
+    width: 1800px;
+    height: 710px;
+}
+.test2-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+.txt2{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head2{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx2{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+
+
+
+
+
+#test3{
+    background-color: rgb(104, 103, 103);
+    position: relative;
+    left: 3600px;
+    bottom: 1510px;
+    width: 1800px;
+    height: 710px;
+}
+.test3-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+.txt3{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head3{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx3{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
