@@ -129,3 +129,84 @@ body{
     left: 650px;
     top: -80px;
 }
+
+
+
+#test4{
+    background-color: rgb(165, 163, 163);
+    position: relative;
+    left: 5400px;
+    bottom: 2250px;
+    width: 1800px;
+    height: 710px;
+}
+.test4-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+.txt4{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head4{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx4{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+
+#test5{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 7200px;
+    bottom: 2990px;
+    width: 1800px;
+    height: 710px;
+}
+.test5-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+.txt5{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head5{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx5{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
