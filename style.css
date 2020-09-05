@@ -1,8 +1,8 @@
 html{
-    height: 690px;
+    height: 600px;
 }
 body{
-    height: 690px;
+    height: 600px;
 }
 
 #test0{
@@ -11,22 +11,24 @@ body{
     left: 0px;
     bottom: 30px;
     width: 1800px;
-    height: 710px;
+    height: 750px;
+    display: block;
 }
 
 .txt0{
     color: black;
     position: relative;
-    font-size: 32px;
-    left: 80px;
-    top: 90px;
+    font-size: 74px;
+    left: 600px;
+    top: 250px;
+    display: inline-block;
 }
 .txt0-1{
     color: black;
     position: relative;
     font-size: 22px;
-    left: 80px;
-    top: 50px;
+    left: 670px;
+    top: 150px;
 }
 
 
