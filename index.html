@@ -9,6 +9,11 @@
 <body>
     <div id="test0" onclick="showCoords(event)">
         <p class="txt0">History Computers</p>
+        <button onclick="Scroll1()">test1</button>
+        <button onclick="Scroll2()">test2</button>
+        <button onclick="Scroll3()">test3</button>
+        <button onclick="Scroll4()">test4</button>
+        <button onclick="Scroll5()">test5</button>
         <p class="txt0-1">....................................................................
             <br>....................................................................
             <br>....................................................................
@@ -25,6 +30,28 @@
             var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
             document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
             }
+
+            function Scroll1() {
+            var elmnt = document.getElementById("test1");
+            elmnt.scrollIntoView();
+            }
+            function Scroll2() {
+            var elmnt = document.getElementById("test2");
+            elmnt.scrollIntoView();
+            }
+            function Scroll3() {
+            var elmnt = document.getElementById("test3");
+            elmnt.scrollIntoView();
+            }
+            function Scroll4() {
+            var elmnt = document.getElementById("test4");
+            elmnt.scrollIntoView();
+            }
+            function Scroll5() {
+            var elmnt = document.getElementById("test5");
+            elmnt.scrollIntoView();
+            }
+
         </script>
         <p id="demo"></p></div>
     </div>
