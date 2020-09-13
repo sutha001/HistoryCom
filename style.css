@@ -1,8 +1,11 @@
+
 html{
     height: 600px;
+    
 }
 body{
     height: 600px;
+
 }
 
 #test0{
@@ -41,6 +44,7 @@ body{
     width: 1800px;
     height: 710px;
     margin: 0%;
+    display: block;
 }
 .test1-2{
     background-color: red;
@@ -84,6 +88,7 @@ body{
     width: 1800px;
     height: 710px;
     margin: 0%;
+    display: block;
 }
 .test2-2{
     background-color: red;
@@ -129,6 +134,7 @@ body{
     width: 1800px;
     height: 710px;
     margin: 0%;
+    display: block;
 }
 .test3-2{
     background-color: red;
@@ -171,6 +177,7 @@ body{
     width: 1800px;
     height: 710px;
     margin: 0%;
+    display: block;
 }
 .test4-2{
     background-color: red;
@@ -211,7 +218,8 @@ body{
     bottom: 3730px;
     width: 1800px;
     height: 740px;
-    overflow-x: hidden
+    overflow-x: hidden;
+    display: block;
 }
 .test5-2{
     background-color: red;
