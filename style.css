@@ -40,9 +40,9 @@ body{
     background-color: black;
     position: relative;
     left: 1800px;
-    bottom: 770px;
+    bottom: 790px;
     width: 1800px;
-    height: 710px;
+    height: 730px;
     margin: 0%;
     display: block;
 }
@@ -84,7 +84,7 @@ body{
     background-color: rgb(49, 49, 49);
     position: relative;
     left: 3600px;
-    bottom: 1510px;
+    bottom: 1550px;
     width: 1800px;
     height: 710px;
     margin: 0%;
@@ -130,7 +130,7 @@ body{
     background-color: rgb(104, 103, 103);
     position: relative;
     left: 5400px;
-    bottom: 2250px;
+    bottom: 2290px;
     width: 1800px;
     height: 710px;
     margin: 0%;
@@ -173,7 +173,7 @@ body{
     background-color: rgb(165, 163, 163);
     position: relative;
     left: 7200px;
-    bottom: 2990px;
+    bottom: 3030px;
     width: 1800px;
     height: 710px;
     margin: 0%;
@@ -215,7 +215,7 @@ body{
     background-color: rgb(189, 143, 143);
     position: relative;
     left: 9000px;
-    bottom: 3730px;
+    bottom: 3770px;
     width: 1800px;
     height: 740px;
     overflow-x: hidden;
@@ -258,4 +258,636 @@ body{
     top: 200px;
     width: 300px;
     height: 300px;
+}
+
+#test6{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 10800px;
+    bottom: 4510px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test6-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt6{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head6{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx6{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+
+#test7{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 12600px;
+    bottom: 5250px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test7-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt7{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head7{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx7{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+
+#test8{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 14400px;
+    bottom: 5990px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test8-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt8{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head8{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx8{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test9{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 16200px;
+    bottom: 6730px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test9-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt9{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head9{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx9{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test10{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 18000px;
+    bottom: 7470px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test10-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt10{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head10{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx10{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test11{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 19800px;
+    bottom: 8210px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test11-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt11{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head11{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx11{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test12{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 21600px;
+    bottom: 8950px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test12-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt12{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head12{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx12{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test13{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 23400px;
+    bottom: 9690px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test13-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt13{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head13{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx13{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test14{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 25200px;
+    bottom: 10430px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test14-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt14{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head14{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx14{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test15{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 27000px;
+    bottom: 11170px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test15-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt15{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head15{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx15{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test16{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 28800px;
+    bottom: 11910px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test16-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt16{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head16{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx16{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test17{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 30600px;
+    bottom: 12650px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test17-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt17{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head17{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx17{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test18{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 32400px;
+    bottom: 13390px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test18-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt18{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head18{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx18{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test19{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 34200px;
+    bottom: 14130px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test19-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt19{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head19{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx19{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
+}
+
+#test20{
+    background-color: rgb(189, 143, 143);
+    position: relative;
+    left: 36000px;
+    bottom: 14870px;
+    width: 1800px;
+    height: 740px;
+    overflow-x: hidden;
+    display: block;
+}
+.test20-2{
+    background-color: red;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 0%;
+}
+.txt20{
+    color: white;
+    position: relative;
+    font-size: 30px;
+    left: 400px;
+    top: 200px;
+}
+
+.Head20{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -100px;
+}
+.texx20{
+    color: white;
+    position: relative;
+    font-size: 22px;
+    left: 650px;
+    top: -80px;
 }
