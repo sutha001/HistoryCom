@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>History Computer</title>
 </head>
-<body>
+<body onwheel="myFunction(event)">
     <div id="test0" onclick="showCoords(event)">
         <p class="txt0">History Computers</p>
         <button onclick="Scroll1()">test1s</button>
@@ -30,7 +31,6 @@
             var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
             document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
             }
-
             function Scroll1() {
             var elmnt = document.getElementById("test1");
             elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
@@ -55,6 +55,47 @@
             var elmnt = document.getElementById("test0");
             elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
             }
+            var give = 1;
+            function myFunction(event) {
+                var delta = event.deltaY;
+                if(delta > 0)
+                {
+                    give++;
+                }
+                else{
+                    give--;
+                    if(give <= 0){
+                        give = 0;
+                    }
+                }
+
+                var give2 = give;
+                if(give2 <= 0)
+                {
+                    give2 = 0;
+                }
+                console.info(give2);
+
+                if(give2 < 3){
+                    Home();
+                }
+                if(give2 >= 3 && give2 <= 8){
+                    Scroll1();
+                }
+                if(give2 >= 9 && give2 <= 14){
+                    Scroll2();
+                }
+                if(give2 >= 15 && give2 <= 20){
+                    Scroll3();
+                }
+                if(give2 >= 21 && give2 <= 26){
+                    Scroll4();
+                }
+                if(give2 >= 27 && give2 <= 33){
+                    Scroll5();
+                }
+            }
+
 
         </script>
         <p id="demo"></p></div>
