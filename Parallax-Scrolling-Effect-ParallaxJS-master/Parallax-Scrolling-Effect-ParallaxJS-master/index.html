@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Parallax Scrolling Effect</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
 
   <div class="parallax-container" style="height: 850px;">
@@ -14,7 +17,9 @@
     <div class="teaser">
       <div class="content">
         <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor! Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae consequuntur veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor!
+          Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae
+          consequuntur veniam.</p>
       </div>
     </div>
   </div>
@@ -23,7 +28,9 @@
     <div class="teaser">
       <div class="content">
         <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor! Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae consequuntur veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor!
+          Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae
+          consequuntur veniam.</p>
       </div>
     </div>
   </div>
@@ -32,44 +39,158 @@
     <div class="teaser">
       <div class="content">
         <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor! Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae consequuntur veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor!
+          Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae
+          consequuntur veniam.</p>
       </div>
     </div>
   </div>
 
   <article>
     <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam.
     </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt doloremque nihil numquam est, repellat assumenda, nemo velit in quasi magnam corporis vel quisquam. Officia nisi tenetur porro exercitationem quos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt doloremque nihil numquam est, repellat
+      assumenda, nemo velit in quasi magnam corporis vel quisquam. Officia nisi tenetur porro exercitationem quos.</p>
     <h1>Lorem ipsum dolor sit</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae a, error aliquam voluptas delectus magni quaerat assumenda fuga aperiam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae a, error aliquam voluptas delectus
+      magni quaerat assumenda fuga aperiam?</p>
   </article>
 
   <div class="parallax-container" style="height: 1000px;">
-      <img class="parallax" src="img1.jpg" alt="">
-      <div class="teaser">
-        <div class="content">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor! Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae consequuntur veniam.</p>
-        </div>
+    <img class="parallax" src="img1.jpg" alt="">
+    <div class="teaser">
+      <div class="content">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo deleniti veniam corrupti dolor!
+          Accusantium voluptatem, labore cupiditate qui sapiente culpa eos molestias recusandae sed quis deleniti quae
+          consequuntur veniam.</p>
       </div>
     </div>
+  </div>
 
-    <footer>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam.
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt doloremque nihil numquam est, repellat assumenda, nemo velit in quasi magnam corporis vel quisquam. Officia nisi tenetur porro exercitationem quos.</p>
-        <h1>Lorem ipsum dolor sit</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae a, error aliquam voluptas delectus magni quaerat assumenda fuga aperiam?</p>
-    </footer>
-  
-  
+  <footer>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam.
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nesciunt doloremque nihil numquam est, repellat
+      assumenda, nemo velit in quasi magnam corporis vel quisquam. Officia nisi tenetur porro exercitationem quos.</p>
+    <h1>Lorem ipsum dolor sit</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae a, error aliquam voluptas delectus
+      magni quaerat assumenda fuga aperiam?</p>
+  </footer>
+
+
   <script src="parallax.min.js"></script>
   <script>
+
     var parallax = new Parallax('.parallax');
     parallax.init();
+
+    $(document).ready(function () {
+      // $fn.scrollSpeed(step, speed, easing);
+      jQuery.scrollSpeed(250, 2500);
+    });
+
+    // Custom scrolling speed with jQuery
+    // Source: github.com/ByNathan/jQuery.scrollSpeed
+    // Version: 1.0.2
+
+    (function ($) {
+
+      jQuery.scrollSpeed = function (step, speed, easing) {
+
+        var $document = $(document),
+          $window = $(window),
+          $body = $('html, body'),
+          option = easing || 'default',
+          root = 0,
+          scroll = false,
+          scrollY,
+          scrollX,
+          view;
+
+        if (window.navigator.msPointerEnabled)
+
+          return false;
+
+        $window.on('mousewheel DOMMouseScroll', function (e) {
+
+          var deltaY = e.originalEvent.wheelDeltaY,
+            detail = e.originalEvent.detail;
+          scrollY = $document.height() > $window.height();
+          scrollX = $document.width() > $window.width();
+          scroll = true;
+
+          if (scrollY) {
+
+            view = $window.height();
+
+            if (deltaY < 0 || detail > 0)
+
+              root = (root + view) >= $document.height() ? root : root += step;
+
+            if (deltaY > 0 || detail < 0)
+
+              root = root <= 0 ? 0 : root -= step;
+
+            $body.stop().animate({
+
+              scrollTop: root
+
+            }, speed, option, function () {
+
+              scroll = false;
+
+            });
+          }
+
+          if (scrollX) {
+
+            view = $window.width();
+
+            if (deltaY < 0 || detail > 0)
+
+              root = (root + view) >= $document.width() ? root : root += step;
+
+            if (deltaY > 0 || detail < 0)
+
+              root = root <= 0 ? 0 : root -= step;
+
+            $body.stop().animate({
+
+              scrollLeft: root
+
+            }, speed, option, function () {
+
+              scroll = false;
+
+            });
+          }
+
+          return false;
+
+        }).on('scroll', function () {
+
+          if (scrollY && !scroll) root = $window.scrollTop();
+          if (scrollX && !scroll) root = $window.scrollLeft();
+
+        }).on('resize', function () {
+
+          if (scrollY && !scroll) view = $window.height();
+          if (scrollX && !scroll) view = $window.width();
+
+        });
+      };
+
+      jQuery.easing.default = function (x, t, b, c, d) {
+
+        return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+      };
+
+    })(jQuery);
+
   </script>
 </body>
+
 </html>
