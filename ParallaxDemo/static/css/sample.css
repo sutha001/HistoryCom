@@ -118,12 +118,15 @@ body {
   	margin: auto;
 }
 .head{
-	margin-top: 5%;
 	font-size: 72px;
 	text-align: center;
 	color:white;
+	margin-top: 1%;
 	
 }
 #text999{
 	margin-top: -30%;
+}
+#text888{
+	margin-top: 3%;
 }
