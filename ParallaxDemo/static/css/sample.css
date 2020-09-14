@@ -79,7 +79,7 @@ body {
 .story {
 	text-align: center;
 	width: 600px;
-	background: rgba(255, 255, 255, 0.88);
+	background: rgba(238, 234, 234, 0.88);
 	font-size: 20px;
 	position: relative;
 }
@@ -89,6 +89,8 @@ body {
 .story p+p {
 	margin-top: 10px;
 }
+
+
 
 .fastLayer {
 	position:absolute;
@@ -114,4 +116,14 @@ body {
 
 .img{
   	margin: auto;
+}
+.head{
+	margin-top: 5%;
+	font-size: 72px;
+	text-align: center;
+	color:white;
+	
+}
+#text999{
+	margin-top: -30%;
 }
