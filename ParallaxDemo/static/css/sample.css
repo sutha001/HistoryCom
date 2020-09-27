@@ -115,10 +115,9 @@ body {
 }
 
 .head{
-	font-size: 72px;
+	font-size: 32px;
 	text-align: center;
-	color:white;
-	margin-top: 1%;
+	color:black;
 	
 }
 #text999{
@@ -189,4 +188,9 @@ body {
     -o-box-shadow:inset 0 0 5px #666;
     -ms-box-shadow:inset 0 0 5px #666;
 	box-shadow:inset 0 0 5px #666;
+}
+
+
+#HeadBook{
+	font-size: 200px;
 }
