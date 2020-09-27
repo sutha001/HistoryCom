@@ -54,9 +54,16 @@
 			</div></div>
 		</div>
 
-		<div id="scaling" class='para-totalCenterAlign'><div class='story'>
-			<div class="padded">If you want, everything on your slide will scale to fit the window.
-				<span class="hint">experiment with the size of the window to see the magic</span>
+		<div id="optimization" class='para-totalCenterAlign'><div class='story'>
+			<div id="flipbook">
+				<div class="hard"> Turn.js </div>
+				<div class="hard"></div>
+				<div> Page 1 </div>
+				<div> Page 2 </div>
+				<div> Page 3 </div>
+				<div> Page 4 </div>
+				<div class="hard"></div>
+				<div class="hard"></div>
 			</div>
 		</div></div>
 
@@ -87,6 +94,15 @@
 	<script type="text/javascript" src="static/js/parallax.js"></script>
 	<script type="text/javascript" src="static/js/sample.js"></script>
 
+	<script type="text/javascript" src="static/js/book/turn.min.js"></script>
+
+	<script type="text/javascript">
+		$("#flipbook").turn({
+			width: 600,
+			height: 750,
+			autoCenter: true
+		});
+	</script>
 
 </body> 
 </html>
