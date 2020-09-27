@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Test</title>
+</head>
+<body>
+
+	<div class="outer-wrapper">
+  		<div class="wrapper">
+    		<div class="slide one">
+    			<p class="txt1">3500 BCE</p>
+        		<button onclick="Home()">Home</button>
+        		<p class="Head1">Cuneiform Tablet</p>
+        		<p class="texx">
+		            Cuneiform is a system of writing first developed by the 
+		            <br>ancient Sumerians of Mesopotamia c. 3500-3000 BCE. It is 
+		            <br>considered the most significant among the many cultural 
+		            <br>contributions of the Sumerians and the greatest among those 
+		            <br>of the Sumerian city of Uruk which advanced the writing of 
+		            <br>cuneiform c. 3200 BCE. 
+
+        		</p>
+    		</div>
+    		<div class="slide two"></div>
+    		<div class="slide three"></div>
+    		<div class="slide four"></div>
+    		<div class="slide five"></div>
+    		<div class="slide six"></div>
+    		<div class="slide seven"></div>
+    		<div class="slide eight"></div>
+    		<div class="slide nine"></div>
+    		<div class="slide ten"></div>
+  		</div>
+	</div>
+	<script>
+		function Scroll1() {
+		var elmnt = document.getElementById("slide two");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		function Scroll2() {
+		var elmnt = document.getElementById("slide three");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		function Scroll3() {
+		var elmnt = document.getElementById("slide four");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		function Scroll4() {
+		var elmnt = document.getElementById("slide five");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		function Scroll5() {
+		var elmnt = document.getElementById("slide six");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		function Home() {
+		var elmnt = document.getElementById("slide seven");
+		elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+		}
+		var give = 1;
+		function myFunction(event) {
+			var delta = event.deltaY;
+			console.info(event);
+			if(delta > 0)
+			{
+				give++;
+			}
+			else{
+				give--;
+				if(give <= 0){
+					give = 0;
+				}
+			}
+
+			var give2 = give;
+			if(give2 <= 0)
+			{
+				give2 = 0;
+			}
+			console.info(give2);
+
+			if(give2 < 3){
+				Home();
+			}
+			if(give2 == 3 ){
+				Scroll1();
+			}
+			if(give2 == 4){
+				Scroll2();
+			}
+			if(give2 == 5){
+				Scroll3();
+			}
+			if(give2 == 6){
+				Scroll4();
+			}
+			if(give2 == 7){
+				Scroll5();
+			}
+		}
+
+
+	</script>
+</body>
+</html>
