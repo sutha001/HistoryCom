@@ -134,6 +134,8 @@ h1 {
     margin: 5%;
     color: #333;
 
+
+
 }
 
 .ss {
@@ -186,7 +188,11 @@ h1 {
 }
 
 .textContent {
-    font-size: 36px;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    text-align: left;
 }
 
 .bginput {
