@@ -131,12 +131,11 @@ body {
 
 h1 {
     font-weight: lighter;
-    margin: -100px;
+    margin: 5%;
     color: #333;
     -webkit-text-fill-color: #333;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 0.005em;
-    height: 260px;
 }
 
 .ss {
