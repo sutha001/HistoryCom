@@ -1,398 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>History Computer</title>
+<html>
+ <head>
+
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+
+ 	<title>HistoryOfComputer</title>
+	
+	<!-- Practical proven viewport for better mobile experience -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	
+	<link type="text/css" rel="stylesheet" href="static/css/parallax.css">
+	<link type="text/css" rel="stylesheet" href="static/css/sample.css">
+
 </head>
-<body onwheel="myFunction(event)">
-    <div id="test0" onclick="showCoords(event)">
-        <p class="txt0">History Computers</p>
-        <button onclick="Scroll1()">test1s</button>
-        <button onclick="Scroll2()">test2</button>
-        <button onclick="Scroll3()">test3</button>
-        <button onclick="Scroll4()">test4</button>
-        <button onclick="Scroll5()">test5</button>
-        <p class="txt0-1">....................................................................
-            <br>....................................................................
-            <br>....................................................................
-            <br>....................................................................
 
-        </p>
-        <script>
-            function showCoords(event) {
-            var cX = event.clientX;
-            var sX = event.screenX;
-            var cY = event.clientY;
-            var sY = event.screenY;
-            var coords1 = "client - X: " + cX + ", Y coords: " + cY;
-            var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
-            document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
-            }
-            function Scroll1() {
-            var elmnt = document.getElementById("test1");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            function Scroll2() {
-            var elmnt = document.getElementById("test2");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            function Scroll3() {
-            var elmnt = document.getElementById("test3");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            function Scroll4() {
-            var elmnt = document.getElementById("test4");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            function Scroll5() {
-            var elmnt = document.getElementById("test5");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            function Home() {
-            var elmnt = document.getElementById("test0");
-            elmnt.scrollIntoView({ block: 'end',  behavior: 'smooth' });
-            }
-            var give = 1;
-            function myFunction(event) {
-                var delta = event.deltaY;
-                console.info(event);
-                if(delta > 0)
-                {
-                    give++;
-                }
-                else{
-                    give--;
-                    if(give <= 0){
-                        give = 0;
-                    }
-                }
+<body  class='unloaded'>
+	<img class="loadBackground" src="static/img/bck.png">
 
-                var give2 = give;
-                if(give2 <= 0)
-                {
-                    give2 = 0;
-                }
-                console.info(give2);
+	<div class='preloaderCont'>
+		<span class='ending'><img src="static/img/Loading.png"></span><span class='starting'>
+	</div>
 
-                if(give2 < 3){
-                    Home();
-                }
-                if(give2 >= 3 && give2 <= 8){
-                    Scroll1();
-                }
-                if(give2 >= 9 && give2 <= 14){
-                    Scroll2();
-                }
-                if(give2 >= 15 && give2 <= 20){
-                    Scroll3();
-                }
-                if(give2 >= 21 && give2 <= 26){
-                    Scroll4();
-                }
-                if(give2 >= 27 && give2 <= 33){
-                    Scroll5();
-                }
-            }
+	<div id="parallax">
+
+		<img alt=".1" class="parallaxBackground" src="static/img/bg2.jpg">
 
 
-        </script>
-        <p id="demo"></p></div>
-    </div>
+		<div id="hi">
+			<div class="boxtitle">
+				<img class="imgtitle" src="static/img/TiTle.png">
+			</div>
+			
+			<div class='popularResolution para-totalCenterAlign'>
+			<div class='story'>
+				<!--<div class="padded"><h1>History Of Computer</h1>Navigate by pressing keyboard arrows or rotating mouse wheel →</div> -->
+			</div></div>
+		</div>
 
-    <div id="test1">
-        <p class="txt1">3500 BCE</p>
-        <button onclick="Home()">Home</button>
-        <img src="pic/CuneiformTablet.jpg" class='img'>
-        <p class="Head1">Cuneiform Tablet</p>
-        <p class="texx">
-            Cuneiform is a system of writing first developed by the 
-            <br>ancient Sumerians of Mesopotamia c. 3500-3000 BCE. It is 
-            <br>considered the most significant among the many cultural 
-            <br>contributions of the Sumerians and the greatest among those 
-            <br>of the Sumerian city of Uruk which advanced the writing of 
-            <br>cuneiform c. 3200 BCE. 
+		<!--<div id="simple">
+			<div class='popularResolution para-totalCenterAlign'>
 
-        </p>
-    </div>
-
-    <div id="test2">
-        <p class="txt2">3000 BCE.</p>
-        <button onclick="Home()">Home</button>
-        <img src="pic/Abacus.jpg" class='img'>
-        <p class="Head2">Abacus</p>
-        <p class="texx2">
-            The abacus also called a counting frame, is a calculating tool 
-            <br>that was in use in the ancient Near East, Europe, China, and 
-            <br>Russia, centuries before the adoption of the written Arabic 
-            <br>numeral system.The exact origin of the abacus is still 
-            <br>unknown. The abacus essentially consists of a number of rows 
-            <br>of movable beads or other objects, which represent digits. One 
-            <br>of two numbers is set up, and the beads are manipulated to 
-            <br>implement an operation involving a second number (e.g., 
-            <br>addition), or rarely a square or cubic root.
-
-        </p>
-    </div>
-
-    <div id="test3">
-        <p class="txt3">1617 CE.</p>
-        <button onclick="Home()">Home</button>
-        <img src="pic/Napier’sBones.jpg" class='img'>
-        <p class="Head3">Napier’s Bones</p>
-        <p class="texx3">
-            Napier's bones is a manually-operated calculating device 
-            <br>created by John Napier of Merchiston, Scotland for the 
-            <br>calculation of products and quotients of numbers. The method 
-            <br>was based on lattice multiplication, and also called 
-            <br>'rabdology', a word invented by Napier. Napier published his 
-            <br>version in 1617 in Rabdologiæ, printed in Edinburgh, 
-            <br>dedicated to his patron Alexander Seton.
-
-        </p>
-    </div>
+						<div class='story'>
+				<div class="padded">It moves layers you place in your page with different speed.</div>
+			</div></div>
+		</div>-->
 
 
-    <div id="test4">
-        <p class="txt4">1642 CE.</p>
-        <button onclick="Home()">Home</button>
-        <img src="pic/Pascal'sCalculator.jpg" class='img'>
-        <p class="Head4">Pascal's calculator</p>
-        <p class="texx4">
-            Pascal's calculatoris a mechanical calculator invented by Blaise 
-            <br>Pascal in the mid 17th century. Pascal was led to develop a 
-            <br>calculator by the laborious arithmetical calculations required 
-            <br>by his father's work as the supervisor of taxes in Rouen. 
-            <br>He designed the machine to add and subtract two numbers 
-            <br>directly and to perform multiplication and division through 
-            <br>repeated addition or subtraction.
 
-        </p>
-    </div>
+		<div id="optimization">
 
-    <div id="test5">
-        <p class="txt5">1673 CE.</p>
-        <button onclick="Home()">Home</button>
-        <img src="pic/SteppedReckoner.jpg" class='img'>
-        <p class="Head5">Stepped Reckoner</p>
-        <p class="texx5">
-            The step reckoner (or stepped reckoner) was a digital mechanical 
-            <br>calculator invented by the German mathematician Gottfried 
-            <br>Wilhelm Leibniz around 1673 and completed in 1694.The name 
-            <br>comes from the translation of the German term for its 
-            <br>operating mechanism, Staffelwalze, meaning "stepped drum". It 
-            <br>was the first calculator that could perform all four 
-            <br>arithmetic operations.
+			<div class='popularResolution para-totalCenterAlign'>
+				<div id="flipbook">
+					<div class="hard">
+						<div id="HeadBook">Phase One</div>
+					</div>
+					<div class="hard"></div>
+					<div>
+						<div>
+							<div class="bgpaper">
+								<h1>1995CE</h1>
+								<img class="imgBook" src="static/img/pic/Abacus.jpg"><br>
+								<p class="ss">pihjigsdlgfdljgdgfdgaogha;uhgufahgufdaghjfdjdsfdsf</p>
+								<p class="ss">pihjigsdlgfdljgdgfdgaogha;uhgufahgufdaghjfdjdsfdsf</p>
+								<p class="ss">pihjigsdlgfdljgdgfdgaogha;uhgufahgufdaghjfdjdsfdsf</p>
+								<p class="ss">pihjigsdlgfdljgdgfdgaogha;uhgufahgufdaghjfdjdsfdsf</p>
+								<p class="ss">pihjigsdlgfdljgdgfdgaogha;uhgufahgufdaghjfdjdsfdsf</p>
+							</div>
+							
+						</div>
+					</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div class="hard"></div>
+					<div class="hard"></div>
+				</div>
+			</div>
 
+		</div>
 
-        </p>
-    </div>
+		<div id="optimization">
 
-    <div id="test6">
-        <p class="txt6">1801 CE.</p>
-        <img src="pic/DifferenceEngine.jpg" class='img'>
-        <p class="Head6">Difference Engine</p>
-        <p class="texx3">
-            A difference engine, first created by Charles Babbage, is an automatic 
-            <br>mechanical calculator designed to tabulate polynomial functions. 
-            <br>Its name is derived from the method of divided differences, a way 
-            <br>to interpolate or tabulate functions by using a small set of 
-            <br>polynomial co-efficients. Most mathematical functions commonly used 
-            <br>by engineers, scientists and navigators, including logarithmic and 
-            <br>trigonometric functions, can be approximated by polynomials, so a 
-            <br>difference engine can compute many useful tables of numbers.
+			<div class='popularResolution para-totalCenterAlign'>
+				<div id="flipbook2">
+					<div class="hard">
+						<div id="HeadBook">Phase Two</div>
+					</div>
+					<div class="hard"></div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div class="hard"></div>
+					<div class="hard"></div>
+				</div>
+			</div>
 
-        </p>
-    </div>
-    <div id="test7">
-        <p class="txt7">1837 CE.</p>
-        <img src="pic/AnalyticalMachine.jpg" class='img'>
-        <p class="Head7">Analytical Engine</p>
-        <p class="texx7">
-            The Analytical Engine was a proposed mechanical general-purpose 
-            <br>computer designed by English mathematician and computer pioneer 
-            <br>Charles Babbage. and with the assistance of Ada Lovelace. It was 
-            <br>first described in 1837 as the successor to Babbage's difference 
-            <br>engine a design for a simpler mechanical computer.
-        </p>
-    </div>
-    <div id="test8">
-        <p class="txt8">1890 CE.</p>
-        <img src="pic/TabulatingMachine.jpg" class='img'>
-        <p class="Head8">Tabulating Machine</p>
-        <p class="texx8">
-            The tabulating machine was an electromechanical machine designed to 
-            <br>assist in summarizing information stored on punched cards. Invented
-            <br>by Herman Hollerith, the machine was developed to help process
-            <br>data for the 1890 U.S. Census. Later models were widely used for
-            <br>business applications such as accounting and inventory control. It 
-            <br>spawned a class of machines, known as unit record equipment, and 
-            <br>the data processing industry.
-        </p>
-    </div>
-    <div id="test9">
-        <p class="txt9">1944 CE.</p>
-        <img src="pic/HarvardMark1.jpg" class='img'>
-        <p class="Head9">Harvard Mark I</p>
-        <p class="texx9">
-            The IBM Automatic Sequence Controlled Calculator (ASCC), called 
-            <br>Mark I by Harvard University’s staff, was a general purpose 
-            <br>electromechanical computer that was used in the war effort during 
-            <br>the last part of World War II.
-        </p>
-    </div>
-    <div id="test10">
-        <p class="txt10">1945 CE.</p>
-        <img src="pic/EDVAC.jpg" class='img'>
-        <p class="Head10">EDVAC</p>
-        <p class="texx10">
-            EDVAC (Electronic Discrete Variable Automatic Computer) was one of the 
-            <br>earliest electronic computers. Unlike its predecessor the ENIAC, it 
-            <br>was binary rather than decimal, and was designed to be a 
-            <br>stored-program computer.
-        </p>
-    </div>
-    <div id="test11">
-        <p class="txt11">1949 CE.</p>
-        <img src="pic/EDSAC.jpg" class='img'>
-        <p class="Head11">EDSAC</p>
-        <p class="texx11">
-            The Electronic delay storage automatic calculator (EDSAC) was an early 
-            <br>British computer. Inspired by John von Neumann's seminal First 
-            <br>Draft of a Report on the EDVAC, the machine was constructed by 
-            <br>Maurice Wilkes and his team at the University of Cambridge 
-            <br>Mathematical Laboratory in England. EDSAC was the second electronic 
-            <br>digital stored-program computer to go into regular service.
+		</div>
 
-        </p>
-    </div>
-    <div id="test12">
-        <p class="txt12">1946 CE.</p>
-        <img src="pic/ENIAC.jpg" class='img'>
-        <p class="Head12">ENIAC</p>
-        <p class="texx12">
-            ENIAC (Electronic Numerical Integrator and Computer)
-            <br>was the first electronic general-purpose digital computer.
-            <br>It was Turing-complete, and able to solve "a large class of 
-            <br>numerical problems" through reprogramming.
+		<div id="optimization">
 
+			<div class='popularResolution para-totalCenterAlign'>
+				<div id="flipbook3">
+					<div class="hard">
+						<div id="HeadBook">Phase Three</div>
+					</div>
+					<div class="hard"></div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div class="hard"></div>
+					<div class="hard"></div>
+				</div>
+			</div>
 
-        </p>
-    </div>
-    <div id="test13">
-        <p class="txt13">1951 CE.</p>
-        <img src="pic/UNIVAC.jpg" class='img'>
-        <p class="Head13">UNIVAC</p>
-        <p class="texx13">
-            UNIVAC (Universal Automatic Computer) is a line of electronic digital 
-            <br>stored-program computers starting with the products of the 
-            <br>Eckert–Mauchly Computer Corporation. Later the name was applied to 
-            <br>a division of the Remington Rand company and successor organizations.
-        </p>
-    </div>
-    <div id="test14">
-        <p class="txt14">1954 CE.</p>
-        <img src="pic/UNIVAC1.jpg" class='img'>
-        <p class="Head14">UNIVAC I</p>
-        <p class="texx14">
-            The UNIVAC I (UNIVersal Automatic Computer I) was the first general-purpose 
-            <br>electronic digital computer design for business application produced in 
-            <br>the United States.It was designed principally by J. Presper Eckert 
-            <br>and John Mauchly, the inventors of the ENIAC. Design work was started by 
-            <br>their company, Eckert–Mauchly Computer Corporation (EMCC), and was 
-            <br>completed after the company had been acquired by Remington Rand (which 
-            <br>later became part of Sperry, now Unisys). In the years before successor 
-            <br>models of the UNIVAC I appeared, the machine was simply known as "the 
-            <br>UNIVAC".
-        </p>
-    </div>
-    <div id="test15">
-        <p class="txt15">1953 CE.</p>
-        <img src="pic/IBM650.jpg" class='img'>
-        <p class="Head15">IBM 650</p>
-        <p class="texx15">
-            The IBM 650 Magnetic Drum Data-Processing Machine is an early digital 
-            <br>computer produced by IBM Corporation in the mid-1950s. The first one was 
-            <br>installed in late 1954 and it was the most-popular computer for the next 
-            <br>5 years.It was announced in 1953 and in 1956 enhanced as the IBM 650 
-            <br>RAMAC with the addition of up to four disk storage units. Almost 2,000 
-            <br>systems were produced, the last in 1962.Support for the 650 and its 
-            <br>component units was withdrawn in 1969.
+		</div>
 
+		<div id="optimization">
 
-        </p>
-    </div>
-    <div id="test16">
-        <p class="txt16">1939 CE.</p>
-        <img src="pic/VacuumCubeComputer.jpg" class='img'>
-        <p class="Head16">Vacuum Cube Computer</p>
-        <p class="texx16">
-            A vacuum tube computer, now termed a first-generation computer, is a computer 
-            <br>that uses vacuum tubes for logic circuitry. Although superseded by second 
-            <br>generation, transistorized computers, vacuum tube computers continued to 
-            <br>be built into the 1960s. These computers were mostly one-of-a-kind designs.
+			<div class='popularResolution para-totalCenterAlign'>
+				<div id="flipbook4">
+					<div class="hard">
+						<div id="HeadBook">Phase Four</div>
+					</div>
+					<div class="hard"></div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div class="hard"></div>
+					<div class="hard"></div>
+				</div>
+			</div>
 
-        </p>
-    </div>
-    <div id="test17">
-        <p class="txt17">1958 CE.</p>
-        <img src="pic/TransistorComputer.jpg" class='img'>
-        <p class="Head17">Transistor computer</p>
-        <p class="texx17">
-            A transistor computer, now often called a second generation computer,is a 
-            <br>computer which uses discrete transistors instead of vacuum tubes. The 
-            <br>first generation of electronic computers used vacuum tubes, which 
-            <br>generated large amounts of heat, were bulky and unreliable. A second 
-            <br>generation of computers, through the late 1950s and 1960s featured circuit 
-            <br>boards filled with individual transistors and magnetic core memory. These 
-            <br>machines remained the mainstream design into the late 1960s, when 
-            <br>integrated circuits started appearing and led to the third generation
-            <br>computer.
-        </p>
-    </div>
-    <div id="test18">
-        <p class="txt18">1959 CE.</p>
-        <img src="pic/IBM1620.jpg" class='img'>
-        <p class="Head18">IBM 1620</p>
-        <p class="texx18">
-            The IBM 1620 was announced by IBM on October 21, 1959,and marketed as an 
-            <br>inexpensive "scientific computer".After a total production of about two 
-            <br>thousand machines, it was withdrawn on November 19, 1970. Modified 
-            <br>versions of the 1620 were used as the CPU of the IBM 1710 and IBM 1720 
-            <br>Industrial Process Control Systems (making it the first digital computer 
-            <br>considered reliable enough for real-time process control of factory equipment)
+		</div>
 
-        </p>
-    </div>
-    <div id="test19">
-        <p class="txt19">1959 CE.</p>
-        <img src="pic/IBM1401.jpg" class='img'>
-        <p class="Head19">IBM 1401</p>
-        <p class="texx19">
-            The IBM 1401 is a variable-wordlength decimal computer that was announced by IBM on 
-            <br>October 5, 1959. The first member of the highly successful IBM 1400 series, it 
-            <br>was aimed at replacing unit record equipment for processing data stored on 
-            <br>punched cards and at providing peripheral services for larger computers.The 1401 
-            <br>is considered to be the Model-T Ford of the computer industry, because it was 
-            <br>mass-produced and because of its sales volume. Over 12,000 units were produced 
-            <br>and many were leased or resold after they were replaced with newer technology. 
-            <br>The 1401 was withdrawn on February 8, 1971.
+		<div id="optimization">
 
-        </p>
-    </div>
-    <div id="test20">
-        <p class="txt20">1964 CE.</p>
-        <img src="pic/IC.jpg" class='img'>
-        <p class="Head20">Integrated Circuit</p>
-        <p class="texx20">
-            The period of third generation was from 1965-1971. The computers of third generation 
-            <br>used Integrated Circuits (ICs) in place of transistors. A single IC has many 
-            <br>transistors, resistors, and capacitors along with the associated circuitry.
+			<div class='popularResolution para-totalCenterAlign'>
+				<div id="flipbook5">
+					<div class="hard">
+						<div id="HeadBook">Phase Five</div>
+					</div>
+					<div class="hard"></div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div class="hard"></div>
+					<div class="hard"></div>
+				</div>
+			</div>
 
-        </p>
-    </div>
+		</div>
+		
 
-</body>
+		
+
+	
+
+	</div>
+		
+
+	<!-- TODO: Describe which functions of .custom JS-files are needed -->
+	<script type="text/javascript" src="static/js/third_party/jquery.js"></script>
+	<script type="text/javascript" src="static/js/third_party/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="static/js/third_party/jquery.custom.js"></script>
+	<script type="text/javascript" src="static/js/third_party/modernizr.custom.js"></script>
+
+	<script type="text/javascript" src="static/js/parallax.js"></script>
+	<script type="text/javascript" src="static/js/sample.js"></script>
+
+	<script type="text/javascript" src="static/js/book/turn.min.js"></script>
+
+	<script type="text/javascript">
+		$("#flipbook").turn({
+			width: 1150,
+			height: 750,
+			autoCenter: true
+		});
+
+		$("#flipbook2").turn({
+			width: 1150,
+			height: 750,
+			autoCenter: true
+		});
+
+		$("#flipbook3").turn({
+			width: 1150,
+			height: 750,
+			autoCenter: true
+		});
+
+		$("#flipbook4").turn({
+			width: 1150,
+			height: 750,
+			autoCenter: true
+		});
+
+		$("#flipbook5").turn({
+			width: 1150,
+			height: 750,
+			autoCenter: true
+		});
+	</script>
+
+</body> 
 </html>
