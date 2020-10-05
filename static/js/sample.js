@@ -134,8 +134,8 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = y;
 
 	var end = new Date().getTime();
-	time = (end - start) * 0.001;
-	console.log(time * 1000);
+	time = ((end - start) * 0.001)*1000;
+	console.log(time);
 	alert(time + " S");
 
 }
@@ -145,11 +145,13 @@ function count1() {
 	console.log("1");
 	var timeleft = 0;
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time*1000)) {
+		if (timeleft >= time) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("age1").disabled = false;
 		} else {
 			document.getElementById("timeeie").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("age1").disabled = true;
 		}
 		timeleft += 1;
 	}, 1000);
