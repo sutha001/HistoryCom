@@ -186,7 +186,9 @@ h1 {
 }
 
 .textContent {
-    font-size: 36px;
+    font-size: 16px;
+    margin: auto;
+
 }
 
 .bginput {
