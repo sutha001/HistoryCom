@@ -186,3 +186,17 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.textContent {
+    font-size: 36px;
+}
+
+.bginput {
+    background-color: pink;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
