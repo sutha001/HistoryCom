@@ -1,51 +1,51 @@
-aRCDescript = [ {
-	srcString : '#layouts .story',
-	fitting : resizeables.fillModes.NONE,
-	multiLayout : true
-},  {
-	srcString : '#scaling .story',
-	fitting : resizeables.fillModes.FIT_PARENT,
+aRCDescript = [{
+	srcString: '#layouts .story',
+	fitting: resizeables.fillModes.NONE,
+	multiLayout: true
+}, {
+	srcString: '#scaling .story',
+	fitting: resizeables.fillModes.FIT_PARENT,
 }];
 
 
 /* */
 
 var optimizationSlide = {
-	pause : function() {
-			$("#optimization .fastLayer").stop(true,false);
+	pause: function () {
+		$("#optimization .fastLayer").stop(true, false);
 	},
-	resume : function() {
+	resume: function () {
 
 		$("#optimization .fastLayer").animate({
-			'margin-top' : '500px'
+			'margin-top': '500px'
 		}, 400, 'easeInOutCubic').animate({
-			'margin-top' : '0px'
+			'margin-top': '0px'
 		}, 400, 'easeOutCubic', optimizationSlide.resume);
 	}
 }
 
-function createLayers(){
+function createLayers() {
 
-	for(var i=0; i<30; i++){
+	for (var i = 0; i < 30; i++) {
 
 		var layer = $("<div class='fastLayer'><div><div></div></div></div>");
 
 		layer.css({
-			left: Math.random()*1750-350,
-			top: Math.random()*860-200
+			left: Math.random() * 1750 - 350,
+			top: Math.random() * 860 - 200
 		});
-		
+
 		var q = Math.random();
 		layer.find('>div').attr({
-			alt: q*6+1
+			alt: q * 6 + 1
 		});
-		
-		var size = q*270+30;
+
+		var size = q * 270 + 30;
 		layer.find('>div>div').css({
 			width: size,
 			height: size,
 			'border-radius': size,
-			'-webkit-filter': 'blur('+q*15+'px)',
+			'-webkit-filter': 'blur(' + q * 15 + 'px)',
 			background: 'rgba(255, 255, 255, .5)'
 		});
 
@@ -55,31 +55,31 @@ function createLayers(){
 
 		$('#animated .popularResolution').append(animatedCopy);
 
-		(function(animatedCopy){
+		(function (animatedCopy) {
 
 			var paused = true,
 				progress = 0,
 				initialPosition = animatedCopy.position(),
 				speedKoeff = Math.random(),
-				initialPhase = Math.random()*Math.PI*2,
-				amplitude = Math.random()*100+100;
+				initialPhase = Math.random() * Math.PI * 2,
+				amplitude = Math.random() * 100 + 100;
 
-			setInterval(function(){
-				if(paused) return;
+			setInterval(function () {
+				if (paused) return;
 
-				var angle = progress*speedKoeff+initialPhase;
-				animatedCopy.css('left',initialPosition.left+Math.sin(angle)*amplitude);
-				animatedCopy.css('top',initialPosition.top+Math.cos(angle)*amplitude);
+				var angle = progress * speedKoeff + initialPhase;
+				animatedCopy.css('left', initialPosition.left + Math.sin(angle) * amplitude);
+				animatedCopy.css('top', initialPosition.top + Math.cos(angle) * amplitude);
 
-				progress+=.1;
+				progress += .1;
 
-			},17);
+			}, 17);
 
 			animatedCopy.data({
-				resume: function(){
+				resume: function () {
 					paused = false;
 				},
-				pause: function(){
+				pause: function () {
 					paused = true;
 				}
 			});
@@ -90,21 +90,21 @@ function createLayers(){
 }
 
 
-$(function(){
+$(function () {
 
 	createLayers();
 	optimizationSlide.resume();
 
-	$('#parallax').on('finishedMove', function(amount) {
+	$('#parallax').on('finishedMove', function (amount) {
 
-		$('#animated .popularResolution .fastLayer').each(function(){
+		$('#animated .popularResolution .fastLayer').each(function () {
 			$(this).data('resume')();
 		});
 		optimizationSlide.resume();
 	});
-	$('#parallax').on('startedMove', function() {
+	$('#parallax').on('startedMove', function () {
 
-		$('#animated .popularResolution .fastLayer').each(function(){
+		$('#animated .popularResolution .fastLayer').each(function () {
 			$(this).data('pause')();
 		});
 
@@ -115,3 +115,42 @@ $(function(){
 	startAllParaSystems();
 
 });
+
+
+function fib(n) {
+	if (n < 2) {
+		return n
+	}
+	return fib(n - 1) + fib(n - 2)
+}
+var time;
+
+function myFunction() {
+	var start = new Date().getTime();
+
+	var x = document.getElementById("myNumber").value;
+	var y = fib(x);
+
+	document.getElementById("demo").innerHTML = y;
+
+	var end = new Date().getTime();
+	time = (end - start) * 0.001;
+	console.log(time * 1000);
+	alert(time + " S");
+
+}
+
+
+function count1() {
+	console.log("1");
+	var timeleft = 0;
+	var downloadTimer = setInterval(function () {
+		if (timeleft >= (time*1000)) {
+			clearInterval(downloadTimer);
+			document.getElementById("timeeie").innerHTML = "Finished "+ timeleft +" Sec";
+		} else {
+			document.getElementById("timeeie").innerHTML = timeleft + " seconds remaining";
+		}
+		timeleft += 1;
+	}, 1000);
+}
