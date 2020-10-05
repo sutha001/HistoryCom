@@ -140,11 +140,7 @@ function myFunction() {
 	var end = new Date().getTime();
 	time = ((end - start) * 0.001) * 1000;
 	console.log(time);
-	alert(time * 10000 + " S" + " Age1");
-	alert(time * 1000 + " S" + " Age2");
-	alert(time * 100 + " S" + " Age3");
-	alert(time * 10 + " S" + " Age4");
-	alert(time + " S" + " Age5");
+	alert(time + " S");
 	document.getElementById("age1").disabled = false;
 	document.getElementById("age2").disabled = false;
 	document.getElementById("age3").disabled = false;
@@ -162,7 +158,7 @@ function count1() {
 			document.getElementById("timeeie").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age1").disabled = false;
 		} else {
-			document.getElementById("timeeie").innerHTML = timeleft + " Seconds A Go";
+			document.getElementById("timeeie").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age1").disabled = true;
 		}
 		timeleft += 1;
@@ -178,7 +174,7 @@ function count2() {
 			document.getElementById("timeeie2").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age2").disabled = false;
 		} else {
-			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds A Go";
+			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age2").disabled = true;
 		}
 		timeleft += 1;
@@ -194,7 +190,7 @@ function count3() {
 			document.getElementById("timeeie3").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age3").disabled = false;
 		} else {
-			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds A Go";
+			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age3").disabled = true;
 		}
 		timeleft += 1;
@@ -210,7 +206,7 @@ function count4() {
 			document.getElementById("timeeie4").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age4").disabled = false;
 		} else {
-			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds A Go";
+			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age4").disabled = true;
 		}
 		timeleft += 1;
@@ -226,7 +222,7 @@ function count5() {
 			document.getElementById("timeeie5").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age5").disabled = false;
 		} else {
-			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds A Go";
+			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age5").disabled = true;
 		}
 		timeleft += 1;
