@@ -162,7 +162,7 @@ function count1() {
 			document.getElementById("timeeie").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age1").disabled = false;
 		} else {
-			document.getElementById("timeeie").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("timeeie").innerHTML = timeleft + " Seconds A Go";
 			document.getElementById("age1").disabled = true;
 		}
 		timeleft += 1;
@@ -178,7 +178,7 @@ function count2() {
 			document.getElementById("timeeie2").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age2").disabled = false;
 		} else {
-			document.getElementById("timeeie2").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds A Go";
 			document.getElementById("age2").disabled = true;
 		}
 		timeleft += 1;
@@ -194,7 +194,7 @@ function count3() {
 			document.getElementById("timeeie3").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age3").disabled = false;
 		} else {
-			document.getElementById("timeeie3").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds A Go";
 			document.getElementById("age3").disabled = true;
 		}
 		timeleft += 1;
@@ -210,7 +210,7 @@ function count4() {
 			document.getElementById("timeeie4").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age4").disabled = false;
 		} else {
-			document.getElementById("timeeie4").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds A Go";
 			document.getElementById("age4").disabled = true;
 		}
 		timeleft += 1;
@@ -226,7 +226,7 @@ function count5() {
 			document.getElementById("timeeie5").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age5").disabled = false;
 		} else {
-			document.getElementById("timeeie5").innerHTML = timeleft + " seconds remaining";
+			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds A Go";
 			document.getElementById("age5").disabled = true;
 		}
 		timeleft += 1;
