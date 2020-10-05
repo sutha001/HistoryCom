@@ -115,7 +115,11 @@ $(function () {
 	startAllParaSystems();
 
 });
-
+document.getElementById("age1").disabled = true;
+document.getElementById("age2").disabled = true;
+document.getElementById("age3").disabled = true;
+document.getElementById("age4").disabled = true;
+document.getElementById("age5").disabled = true;
 
 function fib(n) {
 	if (n < 2) {
@@ -134,14 +138,18 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = y;
 
 	var end = new Date().getTime();
-	time = ((end - start) * 0.001)*1000;
+	time = ((end - start) * 0.001) * 1000;
 	console.log(time);
-	alert(time*10000 + " S" + " Age1");
-	alert(time*1000 + " S" + " Age2");
-	alert(time*100 + " S" + " Age3");
-	alert(time*10 + " S" + " Age4");
+	alert(time * 10000 + " S" + " Age1");
+	alert(time * 1000 + " S" + " Age2");
+	alert(time * 100 + " S" + " Age3");
+	alert(time * 10 + " S" + " Age4");
 	alert(time + " S" + " Age5");
-
+	document.getElementById("age1").disabled = false;
+	document.getElementById("age2").disabled = false;
+	document.getElementById("age3").disabled = false;
+	document.getElementById("age4").disabled = false;
+	document.getElementById("age5").disabled = false;
 }
 
 
@@ -149,9 +157,9 @@ function count1() {
 	console.log("1");
 	var timeleft = 0;
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time*10000)) {
+		if (timeleft >= (time * 10000)) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("timeeie").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age1").disabled = false;
 		} else {
 			document.getElementById("timeeie").innerHTML = timeleft + " seconds remaining";
@@ -165,9 +173,9 @@ function count2() {
 	console.log("1");
 	var timeleft = 0;
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time*1000)) {
+		if (timeleft >= (time * 1000)) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie2").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("timeeie2").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age2").disabled = false;
 		} else {
 			document.getElementById("timeeie2").innerHTML = timeleft + " seconds remaining";
@@ -181,9 +189,9 @@ function count3() {
 	console.log("1");
 	var timeleft = 0;
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time*100)) {
+		if (timeleft >= (time * 100)) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie3").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("timeeie3").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age3").disabled = false;
 		} else {
 			document.getElementById("timeeie3").innerHTML = timeleft + " seconds remaining";
@@ -197,9 +205,9 @@ function count4() {
 	console.log("1");
 	var timeleft = 0;
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time*10)) {
+		if (timeleft >= (time * 10)) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie4").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("timeeie4").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age4").disabled = false;
 		} else {
 			document.getElementById("timeeie4").innerHTML = timeleft + " seconds remaining";
@@ -215,7 +223,7 @@ function count5() {
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= time) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie5").innerHTML = "Finished "+ timeleft +" Sec";
+			document.getElementById("timeeie5").innerHTML = "Finished " + timeleft + " Sec";
 			document.getElementById("age5").disabled = false;
 		} else {
 			document.getElementById("timeeie5").innerHTML = timeleft + " seconds remaining";
