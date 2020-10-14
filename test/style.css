@@ -1,10 +1,11 @@
 :root{
 	--ci1:#161616;
-	--ci2:#7c7b77;
-	--ci3: #f4f0ea;
+	--ci2: #7c7b77;
+	--ci3:#f4f0ea;
 	--ci4:#f9f9f9;
-	--ci5: #ffe91a;
-	--ci6:#0037ff;
+	--ci5:#ffe91a;
+	--ci6: #0037ff;
+	--ci7: #8ca5ff;
 	--gd-1-2: linear-gradient(to right bottom,var(--ci1),var(--ci2));
 	--gd-2-1: linear-gradient(to right bottom,var(--ci2),var(--ci1));
 	--gd-3-2: linear-gradient(to right bottom,var(--ci3),var(--ci2));
@@ -13,18 +14,19 @@
 	--gd-4-3: linear-gradient(to right bottom,var(--ci4),var(--ci3));
 	--gd-5-4: linear-gradient(to right bottom,var(--ci5),var(--ci4));
 	--gd-4-5: linear-gradient(to right bottom,var(--ci4),var(--ci5));
+	--gd-4-6: linear-gradient(to right bottom,var(--ci4),var(--ci6));
 	--link: var(--ci1);
 	--link-hover: var(--ci2);
-	--btn-bg: var(--ci5);
+	--btn-bg: var(--ci1);
 	--btn-bg-hover: var(--ci2);
 	--nav-link: var(--ci1);
 	--nav-hover: var(--ci2);
-	--bg-color: var(--ci1);
-	--text-color: var(--ci2);
+	--bg-color: #fff;
+	--text-color: #333;
 	--box-shadow: 0 0 0 1px rgba(0,0,0,.02), 0 8px 10px 0 rgba(0,0,0,.04);
 	--round: 8px;
-	--pmr-font: var(--font-anuphan);
-	--txt-font: var(--font-sarabun);
+	--pmr-font: 'Taviraj', serif;
+	--txt-font: var(--font-sans);
 	
 }
 .bg-gd-1-2{background:var(--gd-1-2)}
@@ -46,14 +48,23 @@
     margin-bottom: 1em;
 }
 .btn.-ci1{
-	background:var(--gd-2-1);
+	background:var(--ci6);
 }
 .btn.-ci1:hover{
-	background:var(--gd-1-2);
+	background:var(--ci7);
 }
 .btn.-ci2{
 	background:var(--gd-3-2);
 }
 .btn.-ci2:hover{
 	background:var(--gd-2-3);
+}
+
+.markeiei{
+	background-color: var(--ci6);
+	color: var(--ci4);
+}
+
+.fontBody{
+	font-family: 'Chakra Petch', sans-serif;
 }
