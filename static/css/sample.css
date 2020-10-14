@@ -165,9 +165,8 @@ h1 {
 
 .bgContent {
     background-color: aquamarine;
-    width: 60%;
+    width: 80%;
     height: 80%;
-    margin: auto;
     display: block;
     position: absolute;
     left: 50%;
@@ -206,4 +205,55 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+.Boxtest{
+    background-color: red;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    bottom: 0%;
+}
+.box1{
+    background-color: blue;
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    margin: 5%;
+}
+
+.box2{
+    background-color: green;
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    margin: 5%;
+    bottom: 60%;
+}
+
+.box3{
+    background-color: yellow;
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    margin: 5%;
+    bottom:42%;
+}
+
+.box4{
+    background-color: black;
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    margin: 5%;
+    bottom:25%;
+}
+
+.box5{
+    background-color:white;
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    margin: 5%;
+    bottom:8%;
 }
