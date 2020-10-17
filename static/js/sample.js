@@ -228,3 +228,7 @@ function count5() {
 		timeleft += 1;
 	}, 1000);
 }
+
+function scrollWin(x, y) {
+	window.scrollBy(x, y);
+  }
