@@ -222,7 +222,7 @@ h1 {
 }
 
 .Boxtest {
-    background-color: red;
+
     width: 30%;
     height: 50%;
     position: absolute;
@@ -230,7 +230,7 @@ h1 {
 }
 
 .box1 {
-    background-color: blue;
+
     width: 90%;
     height: 10%;
     position: absolute;
@@ -238,7 +238,7 @@ h1 {
 }
 
 .box2 {
-    background-color: green;
+ 
     width: 90%;
     height: 10%;
     position: absolute;
@@ -247,7 +247,6 @@ h1 {
 }
 
 .box3 {
-    background-color: yellow;
     width: 90%;
     height: 10%;
     position: absolute;
@@ -256,7 +255,7 @@ h1 {
 }
 
 .box4 {
-    background-color: black;
+
     width: 90%;
     height: 10%;
     position: absolute;
@@ -265,7 +264,7 @@ h1 {
 }
 
 .box5 {
-    background-color: white;
+
     width: 90%;
     height: 10%;
     position: absolute;
@@ -355,4 +354,16 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.imgbox{
+    width: 10%;
+    height: 100%;
+    left: 34%;
+    top:5%;
+    position: absolute;
+}
+
+.txtbox{
+    font-size: 450%;
 }
