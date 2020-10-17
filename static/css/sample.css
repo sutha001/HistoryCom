@@ -367,3 +367,10 @@ h1 {
 .txtbox{
     font-size: 450%;
 }
+
+.txtposiimg{
+    font-size: 450%;
+    left: 34%;
+    top:5%;
+    position: absolute;
+}
