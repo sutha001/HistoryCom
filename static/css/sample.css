@@ -134,19 +134,20 @@ h1 {
     margin: 5%;
     color: #333;
 }
-.imgage3bg h1{
+
+.imgage3bg h1 {
     font-weight: lighter;
     margin: 5%;
     color: white;
 }
 
-.imgage4bg h1{
+.imgage4bg h1 {
     font-weight: lighter;
     margin: 5%;
     color: rgb(28, 224, 37);
 }
 
-.imgage5bg h1{
+.imgage5bg h1 {
     font-weight: lighter;
     margin: 5%;
     color: white;
@@ -220,14 +221,15 @@ h1 {
     z-index: -1;
 }
 
-.Boxtest{
+.Boxtest {
     background-color: red;
     width: 30%;
     height: 50%;
     position: absolute;
     bottom: 0%;
 }
-.box1{
+
+.box1 {
     background-color: blue;
     width: 90%;
     height: 10%;
@@ -235,7 +237,7 @@ h1 {
     margin: 5%;
 }
 
-.box2{
+.box2 {
     background-color: green;
     width: 90%;
     height: 10%;
@@ -244,34 +246,34 @@ h1 {
     bottom: 60%;
 }
 
-.box3{
+.box3 {
     background-color: yellow;
     width: 90%;
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom:42%;
+    bottom: 42%;
 }
 
-.box4{
+.box4 {
     background-color: black;
     width: 90%;
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom:25%;
+    bottom: 25%;
 }
 
-.box5{
-    background-color:white;
+.box5 {
+    background-color: white;
     width: 90%;
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom:8%;
+    bottom: 8%;
 }
 
-.imgage3bg{
+.imgage3bg {
     color: white;
     background-color: black;
     width: 40%;
@@ -284,7 +286,7 @@ h1 {
     overflow: hidden;
 }
 
-.imgage4bg{
+.imgage4bg {
     color: rgb(28, 224, 37);
     background-color: black;
     width: 40%;
@@ -297,9 +299,9 @@ h1 {
     overflow: hidden;
 }
 
-.imgage5bg{
+.imgage5bg {
     color: black;
-    background-color:white;
+    background-color: white;
     width: 60%;
     height: 70%;
     display: block;
@@ -310,7 +312,7 @@ h1 {
     overflow: hidden;
 }
 
-.imgage3{
+.imgage3 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -318,10 +320,10 @@ h1 {
     display: block;
     position: absolute;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.bgContent1{
+.bgContent1 {
     width: 100%;
     height: 100%;
     display: block;
@@ -331,20 +333,20 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.but{
+.but {
     background-color: #dc2222;
     width: 5%;
     height: 5%;
     right: 10%;
     bottom: 15%;
     position: absolute;
-
 }
-.but:hover{
+
+.but:hover {
     background-color: #333;
 }
 
-.bgnn{
+.bgnn {
     width: 60%;
     height: 70%;
     position: absolute;
