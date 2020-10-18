@@ -24,6 +24,15 @@ a {
 
 }
 
+@font-face {
+    font-family: 'mitrregular';
+    src: url('mitr-regular-webfont.woff2') format('woff2'),
+         url('mitr-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #footer {
     position: fixed;
     z-index: 2;
