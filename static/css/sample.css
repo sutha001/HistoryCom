@@ -16,14 +16,6 @@ a {
 }
 
 @font-face {
-    font-family: 'ps_pimpdeed_iiregular';
-    src: url('pspimpdeedii-webfont.woff2') format('woff2'),
-         url('pspimpdeedii-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
     font-family: 'rd_chulajaruekregular';
     src: url('rd_chulajaruek-webfont.woff2') format('woff2'),
          url('rd_chulajaruek-webfont.woff') format('woff');
@@ -224,7 +216,6 @@ h1 {
     padding-right: 10%;
     padding-top: 2%;
     text-align: left;
-    font-family: 'rd_chulajaruekregular';
 }
 
 .bginput {
@@ -396,4 +387,7 @@ h1 {
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
       1px 0 white, 0 -1px white;
+}
+#text34{
+    font-family: 'rd_chulajaruekregular','sans-serif';
 }
