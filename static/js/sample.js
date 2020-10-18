@@ -17,7 +17,7 @@ var optimizationSlide = {
 	resume: function () {
 
 		$("#optimization .fastLayer").animate({
-			'margin-top': '500px'
+			'margin-top': '0px'
 		}, 400, 'easeInOutCubic').animate({
 			'margin-top': '0px'
 		}, 400, 'easeOutCubic', optimizationSlide.resume);
