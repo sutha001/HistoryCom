@@ -232,8 +232,8 @@ h1 {
 
 .Boxtest {
 
-    width: 30%;
-    height: 50%;
+    width: 50%;
+    height: 30%;
     position: absolute;
     bottom: 0%;
 }
@@ -244,6 +244,7 @@ h1 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    bottom: 65%;
 }
 
 .box2 {
@@ -252,7 +253,7 @@ h1 {
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom: 60%;
+    bottom: 50%;
 }
 
 .box3 {
@@ -260,7 +261,7 @@ h1 {
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom: 42%;
+    bottom: 35%;
 }
 
 .box4 {
@@ -269,7 +270,7 @@ h1 {
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom: 25%;
+    bottom: 20%;
 }
 
 .box5 {
@@ -278,7 +279,7 @@ h1 {
     height: 10%;
     position: absolute;
     margin: 5%;
-    bottom: 8%;
+    bottom: 5%;
 }
 
 .imgage3bg {
@@ -366,7 +367,7 @@ h1 {
 }
 
 .imgbox{
-    width: 10%;
+    width: 5%;
     height: 100%;
     left: 34%;
     top:5%;
@@ -374,15 +375,17 @@ h1 {
 }
 
 .txtbox{
-    font-size: 450%;
+    font-size: 280%;
+    text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
+    
 }
 
 .txtposiimg{
-    font-size: 450%;
+    font-size: 280%;
     left: 34%;
     top:5%;
     position: absolute;
-}
-#gen2{
-    font-family: 'ps_pimpdeed_iiregular', sans-serif;
+    text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
 }
