@@ -54,9 +54,9 @@
 		<div id="optimization">
 			<img src="static/img/fibo.png" class="imgage3">
 			<div class='popularResolution para-totalCenterAlign'>
-				<input type="number" id="myNumber" min="1" max="45" size="50">
-				<button onclick="myFunction()">Calculator</button>
-				<p id="demo" style="font-size: 72px; color: green"></p>
+				<input type="number" id="myNumber" min="1" max="45" size="50" style="bottom: 57%; left: 45.5%; position: absolute; width: 10%;">
+				<button onclick="myFunction()" style="bottom: 50%; left: 48.5%; position: absolute;">Calculator</button>
+				<p id="demo" style="font-size: 72px; color: green;bottom: 35%; left: 45%; position: absolute;">
 			</div>
 		</div>
 
@@ -65,7 +65,7 @@
 
 			</div>
 			<div class='popularResolution para-totalCenterAlign'>
-				<div class="bgContent">
+				<div class="bgContent" id="gen2">
 					<button onclick="count1()" id="age1">Start !!!</button>
 					<p id="timeeie" style="font-size: 60px;"></p>
 					<h1>คอมพิวเตอร์ยุคแรก หรือ คอมพิวเตอร์ยุคหลอดสูญญากาศ (พ.ศ. 2488-2501)</h1>
@@ -92,6 +92,13 @@
 			<div class="bgTime">
 			</div>
 			<div class='popularResolution para-totalCenterAlign'>
+				<div class='fastLayer' style='left: 200px;
+	top: 30px;'><div alt='2'><div style='width:300px;height:300px;background: rgba(255, 255, 255, 0.25);'></div></div></div>
+			<div class='fastLayer' style='left: 750px;
+	top: 200px;'><div alt='5'><div style='width:300px;height:300px;background: rgba(255, 255, 255, 0.4);'></div></div></div>
+			<div class='fastLayer' style='left: 530px;
+	top: 450px;'><div alt='1.1'><div style='width:300px;height:300px;background: rgba(255, 255, 255, 0.5);'></div></div></div>
+	
 				<div class="bgContent">
 					<button onclick="count2()" id="age2">Start !!!</button>
 					<p id="timeeie2" style="font-size: 60px;"></p>
@@ -194,23 +201,33 @@
 	<div class="Boxtest">
 		<div class="box1">
 			<p class="txtbox">Gen1: </p>
-			<img src="static/img/35.gif" class="imgbox">
+			<p id="wait" class="txtposiimg">wait</p>
+			<img src="static/img/35.gif" class="imgbox" id="load">
+			<img src="static/img/tickRight2.png" class="imgbox" id="finis">
 		</div>
 		<div class="box2">
 			<p class="txtbox">Gen2: </p>
-			<img src="static/img/35.gif" class="imgbox">
+			<p id="wait2" class="txtposiimg">wait</p>
+			<img src="static/img/35.gif" class="imgbox" id="load2">
+			<img src="static/img/tickRight2.png" class="imgbox" id="finis2">
 		</div>
 		<div class="box3">
 			<p class="txtbox">Gen3: </p>
-			<img src="static/img/35.gif" class="imgbox">
+			<p id="wait3" class="txtposiimg">wait</p>
+			<img src="static/img/35.gif" class="imgbox" id="load3">
+			<img src="static/img/tickRight2.png" class="imgbox" id="finis3">
 		</div>
 		<div class="box4">
 			<p class="txtbox">Gen4: </p>
-			<img src="static/img/35.gif" class="imgbox">
+			<p id="wait4" class="txtposiimg">wait</p>
+			<img src="static/img/35.gif" class="imgbox" id="load4">
+			<img src="static/img/tickRight2.png" class="imgbox" id="finis4">
 		</div>
 		<div class="box5">
 			<p class="txtbox">Gen5: </p>
-			<img src="static/img/35.gif" class="imgbox">
+			<p id="wait5" class="txtposiimg">wait</p>
+			<img src="static/img/35.gif" class="imgbox" id="load5">
+			<img src="static/img/tickRight2.png" class="imgbox" id="finis5">
 		</div>
 	</div>
 

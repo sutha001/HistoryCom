@@ -15,6 +15,15 @@ a {
     color: #dc2222;
 }
 
+@font-face {
+    font-family: 'ps_pimpdeed_iiregular';
+    src: url('pspimpdeedii-webfont.woff2') format('woff2'),
+         url('pspimpdeedii-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #footer {
     position: fixed;
     z-index: 2;
@@ -366,4 +375,14 @@ h1 {
 
 .txtbox{
     font-size: 450%;
+}
+
+.txtposiimg{
+    font-size: 450%;
+    left: 34%;
+    top:5%;
+    position: absolute;
+}
+#gen2{
+    font-family: 'ps_pimpdeed_iiregular', sans-serif;
 }
