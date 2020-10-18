@@ -23,6 +23,14 @@ a {
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'rd_chulajaruekregular';
+    src: url('rd_chulajaruek-webfont.woff2') format('woff2'),
+         url('rd_chulajaruek-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #footer {
     position: fixed;
@@ -210,13 +218,13 @@ h1 {
 }
 
 .textContent {
-    font-size: 16px;
     margin: auto;
-    font-size: 15px;
+    font-size: 25px;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 2%;
     text-align: left;
+    font-family: 'rd_chulajaruekregular';
 }
 
 .bginput {
@@ -367,7 +375,7 @@ h1 {
 }
 
 .imgbox{
-    width: 5%;
+    width: 4%;
     height: 100%;
     left: 34%;
     top:5%;
