@@ -305,7 +305,11 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
+<<<<<<< HEAD
     z-index: -1;
+=======
+    font-family: 'mitrregular','sans-serif';
+>>>>>>> 9e1b267e0d462fb14cfded843842de913316a833
 }
 
 .imgage2bg {
@@ -321,6 +325,7 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
+    font-family: 'mitrregular','sans-serif';
 }
 
 .imgage3bg {
