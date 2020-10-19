@@ -148,7 +148,6 @@ function myFunction() {
 	var end = new Date().getTime();
 	time = ((end - start) * 0.001) * 1000;
 	console.log(time);
-	alert(time + " S");
 	document.getElementById("age1").disabled = false;
 	document.getElementById("age2").disabled = false;
 	document.getElementById("age3").disabled = false;
