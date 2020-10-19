@@ -305,6 +305,7 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
+    z-index: -1;
 }
 
 .imgage2bg {
@@ -479,7 +480,7 @@ cursor: pointer;
 }
 
 .imgbox{
-    width: 4%;
+    width: 8.5%;
     height: 100%;
     left: 80%;
     top:5%;
