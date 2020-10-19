@@ -202,7 +202,7 @@ h1 {
 
 .bgContent {
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: block;
     position: absolute;
     left: 50%;
@@ -307,6 +307,7 @@ h1 {
     display: none;
     z-index: -1;
     font-family: 'mitrregular','sans-serif';
+    font-size: 18px;
     
 
 }
@@ -475,7 +476,7 @@ cursor: pointer;
 
 .bgnn {
     width: 60%;
-    height: 70%;
+    height: 100%;
     position: absolute;
     display: block;
     opacity: 0.8;
@@ -487,21 +488,23 @@ cursor: pointer;
 .imgbox{
     width: 8.5%;
     height: 100%;
-    left: 80%;
-    top:5%;
+    left: 95%;
+    top:50%;
     position: absolute;
 }
 
 .txtbox{
-    font-size: 280%;
+    font-size: 28px;
+    
     text-shadow: -1px 0 white, 0 1px white,
       1px 0 white, 0 -1px white;
+    
     
 }
 
 .txtposiimg{
-    font-size: 280%;
-    left: 80%;
+    font-size: 28px;
+    left: 95%;
     top:5%;
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
@@ -536,5 +539,39 @@ cursor: pointer;
 .ScollTop:hover{
     cursor: pointer;
 }
-
+#age1{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    left: 1%;
+}
+#age2{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    left: 1%;
+}
+#age3{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    left: 1%;
+}
+#age4{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    left: 1%;
+}
+#age5{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    left: 1%;
+}
 
