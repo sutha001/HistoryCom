@@ -539,6 +539,7 @@ cursor: pointer;
 .ScollTop:hover{
     cursor: pointer;
 }
+
 #age1{
     position: absolute;
     text-align: center;
@@ -573,5 +574,9 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+}
+
+#butcal {
+    z-index: -1;
 }
 

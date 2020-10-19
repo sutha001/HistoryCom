@@ -130,6 +130,8 @@ function fib(n) {
 var time;
 
 function myFunction() {
+	document.getElementById("butcal").style.zIndex = 1;
+	
 	var start = new Date().getTime();
 
 	var x = document.getElementById("myNumber").value;
