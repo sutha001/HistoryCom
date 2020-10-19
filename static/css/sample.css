@@ -292,7 +292,7 @@ h1 {
     margin: 5%;
     bottom: 5%;
 }
-.imgage1bg {
+#age1scoll {
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     width: 70%;
@@ -305,9 +305,10 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
+    z-index: -1;
 }
 
-.imgage2bg {
+#age2scoll {
     color: white;
     background-color:  rgba(0, 0, 0, 0.3);
     width: 70%;
@@ -320,6 +321,7 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
+    z-index: -1;
 }
 
 .imgage3bg {
@@ -385,7 +387,26 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.butgen1 {
+    width: 5%;
+    height: 7%;
+    right: 7.5%;
+    bottom: 15%;
+    position: absolute;
+}
+.butgen1:hover {
+    cursor: pointer;
+}
+.butgen2 {
+    width: 5%;
+    height: 7%;
+    right: 7.5%;
+    bottom: 15%;
+    position: absolute;
+}
+.butgen2:hover {
+    cursor: pointer;
+}
 .butgen3 {
     width: 5%;
     height: 7%;
@@ -460,7 +481,7 @@ cursor: pointer;
 }
 
 .imgbox{
-    width: 4%;
+    width: 8.5%;
     height: 100%;
     left: 80%;
     top:5%;
@@ -511,4 +532,5 @@ cursor: pointer;
 .ScollTop:hover{
     cursor: pointer;
 }
+
 
