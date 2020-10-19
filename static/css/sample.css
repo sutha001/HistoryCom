@@ -537,4 +537,7 @@ cursor: pointer;
     cursor: pointer;
 }
 
+#butcal {
+    z-index: -1;
+}
 
