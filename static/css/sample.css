@@ -15,6 +15,7 @@ a {
     color: #dc2222;
 }
 
+<<<<<<< Updated upstream
 @font-face {
     font-family: 'rd_chulajaruekregular';
     src: url('rd_chulajaruek-webfont.woff2') format('woff2'),
@@ -33,6 +34,8 @@ a {
 
 }
 
+=======
+>>>>>>> Stashed changes
 #footer {
     position: fixed;
     z-index: 2;
@@ -148,9 +151,11 @@ body {
 }
 
 h1 {
-    font-weight: lighter;
+    text-align: center;
     margin: 5%;
-    color: #333;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .imgage3bg h1 {
@@ -168,7 +173,7 @@ h1 {
 .imgage5bg h1 {
     font-weight: lighter;
     margin: 5%;
-    color: white;
+    color: black;
 }
 
 .ss {
@@ -220,7 +225,7 @@ h1 {
 
 .textContent {
     margin: auto;
-    font-size: 25px;
+    font-size: 16px;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 2%;
@@ -239,8 +244,7 @@ h1 {
 }
 
 .Boxtest {
-
-    width: 50%;
+    width: 20%;
     height: 30%;
     position: absolute;
     bottom: 0%;
@@ -289,6 +293,35 @@ h1 {
     margin: 5%;
     bottom: 5%;
 }
+.imgage1bg {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    overflow-y: visible;
+    border-radius: 30px;
+    display: none;
+}
+
+.imgage2bg {
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    overflow-y: visible;
+    border-radius: 30px;
+    display: none;
+}
 
 .imgage3bg {
     color: white;
@@ -301,6 +334,7 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    overflow-y: visible;
 }
 
 .imgage4bg {
@@ -310,10 +344,11 @@ h1 {
     height: 60%;
     display: block;
     position: absolute;
-    left: 50%;
+    left: 51%;
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    overflow-y: visible;
 }
 
 .imgage5bg {
@@ -350,18 +385,67 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.but {
-    background-color: #dc2222;
+.butgen3 {
     width: 5%;
-    height: 5%;
-    right: 10%;
+    height: 7%;
+    right: 7.5%;
     bottom: 15%;
     position: absolute;
 }
 
-.but:hover {
-    background-color: #333;
+.butgen3:hover {
+    cursor: pointer;
 }
+
+.butgen4{
+    width: 5%;
+    height: 5%;
+    right: 29%;
+    bottom: 8%;
+    position: absolute;
+}
+.butgen4:hover{
+    cursor: pointer;
+}
+
+.butgen5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.butgen5:hover{
+    cursor: pointer;
+}
+
+.clickicon{
+    width: 5%;
+    height: 5%;
+    right: 29%;
+    bottom: 8%;
+    position: absolute;
+}
+.boxgen5{
+    width: 7%;
+    height: 8%;
+    left: 12%;
+    bottom: 7%;
+    position: absolute;
+}
+.boxgen5:hover{
+cursor: pointer;
+}
+
+.backmac{
+    background-color: rgb(145, 145, 145);
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    left: 90%;
+    bottom: 8%;
+    border-radius: 30px;
+    display: none;
+}
+
 
 .bgnn {
     width: 60%;
@@ -377,7 +461,7 @@ h1 {
 .imgbox{
     width: 4%;
     height: 100%;
-    left: 34%;
+    left: 80%;
     top:5%;
     position: absolute;
 }
@@ -391,15 +475,42 @@ h1 {
 
 .txtposiimg{
     font-size: 280%;
-    left: 34%;
+    left: 80%;
     top:5%;
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
       1px 0 white, 0 -1px white;
 }
+<<<<<<< Updated upstream
 #text34{
     font-family: 'rd_chulajaruekregular','sans-serif';
 }
 #text5{
     font-family: 'mitrregular','sans-serif';
 }
+=======
+
+.ScollDown{
+    width: 5%;
+    height: 7%;
+    right: 8%;
+    bottom: 50%;
+    position: absolute;
+}
+
+.ScollDown:hover{
+    cursor: pointer;
+}
+
+.ScollTop{
+    width: 5%;
+    height: 7%;
+    right: 8%;
+    bottom: 60%;
+    position: absolute;
+}
+
+.ScollTop:hover{
+    cursor: pointer;
+}
+>>>>>>> Stashed changes
