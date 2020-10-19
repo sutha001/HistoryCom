@@ -426,8 +426,8 @@ h1 {
 .butgen1 {
     width: 5%;
     height: 7%;
-    right: 7.5%;
-    bottom: 15%;
+    right: 36%;
+    bottom: 46%;
     position: absolute;
 }
 .butgen1:hover {
@@ -436,8 +436,8 @@ h1 {
 .butgen2 {
     width: 5%;
     height: 7%;
-    right: 7.5%;
-    bottom: 15%;
+    right: 22%;
+    bottom: 55%;
     position: absolute;
 }
 .butgen2:hover {
