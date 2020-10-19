@@ -306,6 +306,9 @@ h1 {
     border-radius: 30px;
     display: none;
     z-index: -1;
+    font-family: 'mitrregular','sans-serif';
+    
+
 }
 
 #age2scoll {
@@ -322,6 +325,7 @@ h1 {
     border-radius: 30px;
     display: none;
     z-index: -1;
+    font-family: 'mitrregular','sans-serif';
 }
 
 .imgage3bg {
