@@ -610,4 +610,6 @@ cursor: pointer;
 #butcal {
     z-index: -1;
 }
-
+.timeText{
+    font-family: 'mitrregular','sans-serif';
+}
