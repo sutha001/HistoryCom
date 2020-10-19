@@ -325,6 +325,13 @@ function typeWriter2() {
 		setTimeout(typeWriter2, speed2);
 	}
 }
+function typeWriter3() {
+	if (i3 < txt3.length) {
+		document.getElementById("txtcontentgen3").innerHTML += txt3.charAt(i3);
+		i3++;
+		setTimeout(typeWriter3, speed3);
+	}
+}
 
 function typeWriter4() {
 	if (i4 < txt4.length) {
