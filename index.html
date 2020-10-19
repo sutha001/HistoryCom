@@ -10,9 +10,22 @@
 	<!-- Practical proven viewport for better mobile experience -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 	<link type="text/css" rel="stylesheet" href="static/css/parallax.css">
 	<link type="text/css" rel="stylesheet" href="static/css/sample.css">
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
 </head>
 
@@ -54,35 +67,40 @@
 		<div id="optimization">
 			<img src="static/img/fibo.png" class="imgage3">
 			<div class='popularResolution para-totalCenterAlign'>
-				<input type="number" id="myNumber" min="1" max="45" size="50" style="bottom: 57%; left: 45.5%; position: absolute; width: 10%; text-align: center;">
-				<button onclick="myFunction()" style="bottom: 50%; left: 48.5%; position: absolute;">Calculate</button>
-				<p id="demo" style="font-size: 72px; color: green;bottom: 35%; left: 45%; position: absolute; bottom: 30%; left: 50.25%; position: absolute; transform: translate(-50%, -50%);">
+				<input type="number" id="myNumber" min="1" max="45" size="50" class="form-control"
+					style="bottom: 55%; left: 50%; position: absolute; width: 10%; height: 2%; text-align: center; transform: translate(-50%, -50%);">
+				<button onclick="myFunction()" style="bottom: 44.5%; left: 50%; position: absolute; transform: translate(-50%, -50%);" class="btn btn-outline-secondary">Calculate</button>
+				<p id="demo"
+					style="font-size: 500%; color: rgb(10, 255, 10);bottom: 30%; left: 50%; position: absolute; transform: translate(-50%, -50%);">
 			</div>
 		</div>
 
 		<div id="optimization">
 			<img src="static/img/FirstGen.png" class="imgage3">
+			<div class="imgage1bg" id="age1scoll">
+				<h1>คอมพิวเตอร์ยุคแรก หรือ คอมพิวเตอร์ยุคหลอดสูญญากาศ (พ.ศ. 2488-2501)</h1>
+			</div>
 			<div class='popularResolution para-totalCenterAlign'>
 				<div class="bgContent">
 					<button onclick="count1()" id="age1">Start !!!</button>
 					<p id="timeeie" style="font-size: 60px;"></p>
-					<h1>คอมพิวเตอร์ยุคแรก หรือ คอมพิวเตอร์ยุคหลอดสูญญากาศ (พ.ศ. 2488-2501)</h1>
-					
+
 				</div>
 			</div>
 		</div>
 
 
 		<div id="optimization">
-	
 			<img src="static/img/SecondGen.png" class="imgage3">
+			<div class="imgage2bg" id="age2scoll">
+				<h1>คอมพิวเตอร์ยุคที่สอง หรือ คอมพิวเตอร์ยุคทรานซิสเตอร์ (พ.ศ.2500-2507)</h1>
+			</div>
 			<div class='popularResolution para-totalCenterAlign'>
-				
+
 				<div class="bgContent">
 					<button onclick="count2()" id="age2">Start !!!</button>
 					<p id="timeeie2" style="font-size: 60px;"></p>
-					<h1>คอมพิวเตอร์ยุคที่สอง หรือ คอมพิวเตอร์ยุคทรานซิสเตอร์ (พ.ศ.2500-2507)</h1>
-					
+
 				</div>
 			</div>
 
@@ -90,7 +108,8 @@
 
 
 		<div id="optimization">
-			<div class="imgage3bg" id="text34">
+			<div class="imgage3bg" id="age3scoll">
+
 				<br>
 				<br>
 				<br>
@@ -100,37 +119,76 @@
 				<br>
 				<br>
 				<h1>คอมพิวเตอร์ยุคที่สาม หรือ คอมพิวเตอร์ยุควงจรรวม (พ.ศ.2508-2512)</h1>
-				<p class="textContent" id="txts"></p>
+				<p class="textContent" id="txtcontentgen3"></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
 			</div>
 			<img src="static/img/ThirdGen.png" class="imgage3">
 			<div class='popularResolution para-totalCenterAlign'>
 				<div class="bgnn">
 					<button onclick="count3()" id="age3">Start !!!</button>
 					<p id="timeeie3" style="font-size: 60px;"></p>
-					<div class="but" onclick="typeWriter3()"></div>
+					<div class="butgen3" onclick="typeWriter3()">
+						<img src="static/img/io.png" style="width: 100%; height: 100%;">
+					</div>
+					<div class="clickicon" style="bottom: 9%; right: 3%;">
+						<img src="static/img/Click.png" style="width: 100%; height: 100%;">
+					</div>
+					<div class="ScollDown" onclick="scrollSmoothToBottom('age3scoll')">
+						<img src="static/img/buttonArrow.png"
+							style="width: 100%; height: 100%; transform: rotate(180deg)">
+					</div>
+					<div class="ScollTop" onclick="scrollSmoothToTop('age3scoll')">
+						<img src="static/img/buttonArrow.png" style="width: 100%; height: 100%;">
+					</div>
 				</div>
 
 			</div>
 		</div>
 
 		<div id="optimization">
-			<div class="imgage4bg" id="text34">
+
+			<div class="imgage4bg" id="age4scoll">
 				<br>
 				<br>
 				<br>
 				<br>
 				<h1>คอมพิวเตอร์ยุคที่สี่ หรือ คอมพิวเตอร์ยุควีแอลเอสไอ (พ.ศ.2513-2532)</h1>
-				<p class="textContent" style="font-family: rd_chulajaruekregular;">ยุคที่ 4 เป็นยุคที่นำสารกึ่งตัวนำมาสร้างเป็นวงจรรวมความจุสูงมาก
-					(Very Large Scale Integrated : VLSI) ซึ่งสามารถย่อส่วนไอซีธรรมดาหลายๆ วงจรเข้ามาในวงจรเดียวกัน
-					และมีการประดิษฐ์ ไมโครโพรเซสเซอร์ (Microprocessor) ขึ้น ทำให้เครื่องมีขนาดเล็ก ราคาถูกลง
-					และมีความสามารถในการทำงานสูงและรวดเร็วมาก จึงทำให้มีคอมพิวเตอร์ส่วนบุคคล (Personal Computer)
-					ถือกำเนิดขึ้น</p>
+				<p class="textContent" id="txtcontentgen4"></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
 			</div>
 			<img src="static/img/FourthGen.png" class="imgage3">
 			<div class='popularResolution para-totalCenterAlign'>
 				<div class="bgContent">
 					<button onclick="count4()" id="age4">Start !!!</button>
 					<p id="timeeie4" style="font-size: 60px;"></p>
+					<div class="butgen4" onclick="typeWriter4()">
+						<img src="static/img/buttongen4.png" style="width: 100%; height: 100%;">
+					</div>
+					<div class="clickicon" style="bottom: 2.5%; right: 25%;">
+						<img src="static/img/Click.png" style="width: 100%; height: 100%;">
+					</div>
+					<div class="ScollDown" onclick="scrollSmoothToBottom('age4scoll')">
+						<img src="static/img/buttonArrow.png"
+							style="width: 100%; height: 100%; transform: rotate(180deg)">
+					</div>
+					<div class="ScollTop" onclick="scrollSmoothToTop('age4scoll')">
+						<img src="static/img/buttonArrow.png" style="width: 100%; height: 100%;">
+					</div>
 				</div>
 			</div>
 
@@ -143,20 +201,25 @@
 				<br>
 				<br>
 				<h1>คอมพิวเตอร์ยุคที่ห้า หรือ คอมพิวเตอร์ยุคเครือข่าย (พ.ศ.2533-ปัจจุบัน)</h1><br>
-				<p class="textContent">ยุคที่ 5 ในยุคนี้ ได้มุ่งเน้นการพัฒนา ความสามารถในการทำงานของระบบคอมพิวเตอร์
-					และ ความสะดวกสบายในการใช้งานเครื่องคอมพิวเตอร์ อย่างชัดเจน
-					มีการพัฒนาสร้างเครื่องคอมพิวเตอร์แบบพกพาขนาดเล็กขนาดเล็ก
-					(Portable Computer) ขึ้นใช้งานในยุคนี้โครงการพัฒนาอุปกรณ์ VLSI ให้ใช้งานง่าย
-					และมีความสามารถสูงขึ้น
-					รวมทั้งโครงการวิจัยและพัฒนาเกี่ยวกับ ปัญญาประดิษฐ์ (Artificial Intelligence : AI)
-					เป็นหัวใจของการพัฒนาระบบคอมพิวเตอร์ในยุคนี้ โดยหวังให้ระบบคอมพิวเตอร์มีความรู้
-					สามารถวิเคราะห์ปัญหาด้วยเหตุผล</p>
+				<p class="textContent" id="txtcontentgen5"></p>
 			</div>
 			<img src="static/img/FiftGen.png" class="imgage3">
 			<div class='popularResolution para-totalCenterAlign'>
 				<div class="bgContent">
 					<button onclick="count5()" id="age5">Start !!!</button>
 					<p id="timeeie5" style="font-size: 60px;"></p>
+
+					<div class="clickicon" style="bottom: 2.5%; right: 80%;">
+						<img src="static/img/Click.png" style="width: 100%; height: 100%;">
+					</div>
+					<div class="backmac" id="qwe">
+						<div class="butgen5" onclick="typeWriter5()">
+							<img src="static/img/io.png" style="width: 50%; height: 50%; left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%); ">
+						</div>
+					</div>
+					<div class="boxgen5" onclick="sss()">
+
+					</div>
 				</div>
 			</div>
 
@@ -210,6 +273,7 @@
 	<script type="text/javascript" src="static/js/sample.js"></script>
 
 	<script type="text/javascript" src="static/js/book/turn.min.js"></script>
+
 
 	</script>
 
