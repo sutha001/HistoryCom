@@ -121,6 +121,8 @@ document.getElementById("age3").disabled = true;
 document.getElementById("age4").disabled = true;
 document.getElementById("age5").disabled = true;
 
+document.getElementById("age1skip").disabled = true;
+
 function fib(n) {
 	if (n < 2) {
 		return n
@@ -148,6 +150,7 @@ function myFunction() {
 	document.getElementById("age3").disabled = false;
 	document.getElementById("age4").disabled = false;
 	document.getElementById("age5").disabled = false;
+
 }
 
 document.getElementById("load").style.visibility = "hidden";
@@ -170,7 +173,10 @@ document.getElementById("load5").style.visibility = "hidden";
 document.getElementById("wait5").style.visibility = "visible";
 document.getElementById("finis5").style.visibility = "hidden";
 
-
+function skip1(tim){
+	tim = time*10000;
+	return tim;
+}
 
 function count1() {
 	console.log("1");
@@ -180,6 +186,8 @@ function count1() {
 	document.getElementById("wait").style.visibility = "visible";
 
 	document.getElementById("finis").style.visibility = "hidden";
+
+	document.getElementById("age1skip").disabled = false;
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 10000)) {
 			clearInterval(downloadTimer);
