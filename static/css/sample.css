@@ -587,6 +587,35 @@ cursor: pointer;
     right: 1%;
 }
 
+#age2skip{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 1%;
+}
+#age3skip{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 1%;
+}
+#age4skip{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 1%;
+}
+#age5skip{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 1%;
+}
+
 
 #age2{
     position: absolute;
