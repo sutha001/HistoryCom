@@ -292,7 +292,7 @@ h1 {
     margin: 5%;
     bottom: 5%;
 }
-.imgage1bg {
+#age1scoll {
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     width: 70%;
@@ -305,14 +305,10 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
-<<<<<<< HEAD
     z-index: -1;
-=======
-    font-family: 'mitrregular','sans-serif';
->>>>>>> 9e1b267e0d462fb14cfded843842de913316a833
 }
 
-.imgage2bg {
+#age2scoll {
     color: white;
     background-color:  rgba(0, 0, 0, 0.3);
     width: 70%;
@@ -325,7 +321,7 @@ h1 {
     overflow-y: visible;
     border-radius: 30px;
     display: none;
-    font-family: 'mitrregular','sans-serif';
+    z-index: -1;
 }
 
 .imgage3bg {
