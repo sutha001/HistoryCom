@@ -294,7 +294,7 @@ h1 {
 }
 #age1scoll {
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 70%;
     height: 60%;
     position: absolute;
@@ -310,7 +310,7 @@ h1 {
 
 #age2scoll {
     color: white;
-    background-color:  rgba(0, 0, 0, 0.3);
+    background-color:  rgba(0, 0, 0, 0.4);
     width: 70%;
     height: 60%;
     position: absolute;
@@ -511,7 +511,7 @@ cursor: pointer;
 
 .ScollDown{
     width: 5%;
-    height: 7%;
+    height: 9%;
     right: 8%;
     bottom: 50%;
     position: absolute;
@@ -523,7 +523,7 @@ cursor: pointer;
 
 .ScollTop{
     width: 5%;
-    height: 7%;
+    height: 9%;
     right: 8%;
     bottom: 60%;
     position: absolute;
