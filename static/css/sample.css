@@ -385,7 +385,26 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.butgen1 {
+    width: 5%;
+    height: 7%;
+    right: 7.5%;
+    bottom: 15%;
+    position: absolute;
+}
+.butgen1:hover {
+    cursor: pointer;
+}
+.butgen2 {
+    width: 5%;
+    height: 7%;
+    right: 7.5%;
+    bottom: 15%;
+    position: absolute;
+}
+.butgen2:hover {
+    cursor: pointer;
+}
 .butgen3 {
     width: 5%;
     height: 7%;
