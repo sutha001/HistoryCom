@@ -121,6 +121,12 @@ document.getElementById("age3").disabled = true;
 document.getElementById("age4").disabled = true;
 document.getElementById("age5").disabled = true;
 
+document.getElementById("age1skip").disabled = true;
+document.getElementById("age2skip").disabled = true;
+document.getElementById("age3skip").disabled = true;
+document.getElementById("age4skip").disabled = true;
+document.getElementById("age5skip").disabled = true;
+
 function fib(n) {
 	if (n < 2) {
 		return n
@@ -142,12 +148,12 @@ function myFunction() {
 	var end = new Date().getTime();
 	time = ((end - start) * 0.001) * 1000;
 	console.log(time);
-	alert(time + " S");
 	document.getElementById("age1").disabled = false;
 	document.getElementById("age2").disabled = false;
 	document.getElementById("age3").disabled = false;
 	document.getElementById("age4").disabled = false;
 	document.getElementById("age5").disabled = false;
+
 }
 
 document.getElementById("load").style.visibility = "hidden";
@@ -170,7 +176,32 @@ document.getElementById("load5").style.visibility = "hidden";
 document.getElementById("wait5").style.visibility = "visible";
 document.getElementById("finis5").style.visibility = "hidden";
 
+var skip11 = 0;
+var skip22 = 0;
+var skip33 = 0;
+var skip44 = 0;
+var skip55 = 0;
 
+function skip1(){
+	var timeleft = time*9876;
+	skip11 = 1;
+}
+function skip2(){
+	var timeleft = time*987;
+	skip22 = 1;
+}
+function skip3(){
+	var timeleft = time*89;
+	skip33 = 1;
+}
+function skip4(){
+	var timeleft = time*9;
+	skip44 = 1;
+}
+function skip5(){
+	var timeleft = time;
+	skip55 = 1;
+}
 
 function count1() {
 	console.log("1");
@@ -180,18 +211,26 @@ function count1() {
 	document.getElementById("wait").style.visibility = "visible";
 
 	document.getElementById("finis").style.visibility = "hidden";
+
+	document.getElementById("age1skip").disabled = false;
+
+
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 10000)) {
+		if (timeleft >= (time * 9876) || skip11 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie").innerHTML = "Finished " + timeleft + " Sec";
+			document.getElementById("timeeie").innerHTML = "Finished " + (time * 9876) + " Sec";
 			document.getElementById("age1").disabled = false;
 			document.getElementById("finis").style.visibility = "visible";
 			document.getElementById("load").style.visibility = "hidden";
-		} else {
+			document.getElementById("wait").style.visibility = "hidden";
+			document.getElementById("age1skip").disabled = true;
+			skip11 = 0;
+		} else{
 			document.getElementById("timeeie").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age1").disabled = true;
 			document.getElementById("load").style.visibility = "visible";
 			document.getElementById("wait").style.visibility = "hidden";
+			document.getElementById("age1skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -206,17 +245,23 @@ function count2() {
 
 	document.getElementById("finis2").style.visibility = "hidden";
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 1000)) {
+		if (timeleft >= (time * 987)|| skip22 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie2").innerHTML = "Finished " + timeleft + " Sec";
+			document.getElementById("timeeie2").innerHTML = "Finished " + (time * 987) + " Sec";
 			document.getElementById("age2").disabled = false;
 			document.getElementById("finis2").style.visibility = "visible";
 			document.getElementById("load2").style.visibility = "hidden";
+			document.getElementById("wait2").style.visibility = "hidden";
+			document.getElementById("age2skip").disabled = true;
+			skip22 = 0;
+			
 		} else {
 			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age2").disabled = true;
 			document.getElementById("load2").style.visibility = "visible";
 			document.getElementById("wait2").style.visibility = "hidden";
+			document.getElementById("age2skip").disabled = false;
+
 		}
 		timeleft += 1;
 	}, 1000);
@@ -231,17 +276,21 @@ function count3() {
 
 	document.getElementById("finis3").style.visibility = "hidden";
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 100)) {
+		if (timeleft >= (time * 89)|| skip33 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie3").innerHTML = "Finished " + timeleft + " Sec";
+			document.getElementById("timeeie3").innerHTML = "Finished " + (time * 89) + " Sec";
 			document.getElementById("age3").disabled = false;
 			document.getElementById("finis3").style.visibility = "visible";
 			document.getElementById("load3").style.visibility = "hidden";
+			document.getElementById("wait3").style.visibility = "hidden";
+			document.getElementById("age3skip").disabled = true;
+			skip33 = 0;
 		} else {
 			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age3").disabled = true;
 			document.getElementById("load3").style.visibility = "visible";
 			document.getElementById("wait3").style.visibility = "hidden";
+			document.getElementById("age3skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -256,17 +305,21 @@ function count4() {
 
 	document.getElementById("finis4").style.visibility = "hidden";
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 10)) {
+		if (timeleft >= (time * 9)|| skip44 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie4").innerHTML = "Finished " + timeleft + " Sec";
+			document.getElementById("timeeie4").innerHTML = "Finished " + (time * 9) + " Sec";
 			document.getElementById("age4").disabled = false;
 			document.getElementById("finis4").style.visibility = "visible";
 			document.getElementById("load4").style.visibility = "hidden";
+			document.getElementById("wait4").style.visibility = "hidden";
+			document.getElementById("age4skip").disabled = true;
+			skip44 = 0;
 		} else {
 			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age4").disabled = true;
 			document.getElementById("load4").style.visibility = "visible";
 			document.getElementById("wait4").style.visibility = "hidden";
+			document.getElementById("age4skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -281,17 +334,21 @@ function count5() {
 
 	document.getElementById("finis5").style.visibility = "hidden";
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= time) {
+		if (timeleft >= time || skip55 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie5").innerHTML = "Finished " + timeleft + " Sec";
+			document.getElementById("timeeie5").innerHTML = "Finished " + time + " Sec";
 			document.getElementById("age5").disabled = false;
 			document.getElementById("finis5").style.visibility = "visible";
 			document.getElementById("load5").style.visibility = "hidden";
+			document.getElementById("wait5").style.visibility = "hidden";
+			document.getElementById("age5skip").disabled = true;
+			skip55 = 0;
 		} else {
 			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds Ago";
 			document.getElementById("age5").disabled = true;
 			document.getElementById("load5").style.visibility = "visible";
 			document.getElementById("wait5").style.visibility = "hidden";
+			document.getElementById("age5skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
