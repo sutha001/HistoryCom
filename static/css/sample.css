@@ -447,7 +447,7 @@ h1 {
     width: 5%;
     height: 7%;
     right: 7.5%;
-    bottom: 15%;
+    bottom: 23%;
     position: absolute;
 }
 
@@ -459,7 +459,7 @@ h1 {
     width: 5%;
     height: 5%;
     right: 29%;
-    bottom: 8%;
+    bottom: 16%;
     position: absolute;
 }
 .butgen4:hover{
@@ -486,7 +486,7 @@ h1 {
     width: 7%;
     height: 8%;
     left: 12%;
-    bottom: 7%;
+    bottom: 13%;
     position: absolute;
 }
 .boxgen5:hover{
@@ -578,6 +578,16 @@ cursor: pointer;
     top: 4%;
     left: 1%;
 }
+
+#age1skip{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 1%;
+}
+
+
 #age2{
     position: absolute;
     text-align: center;
@@ -610,6 +620,52 @@ cursor: pointer;
 #butcal {
     z-index: -1;
 }
+
 .timeText{
     font-family: 'mitrregular','sans-serif';
 }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .ScollDown5{
+    width: 5%;
+    height: 9%;
+    right: 5%;
+    bottom: 50%;
+    position: absolute;
+}
+
+.ScollDown5:hover{
+    cursor: pointer;
+}
+
+.ScollTop5{
+    width: 5%;
+    height: 9%;
+    right: 5%;
+    bottom: 60%;
+    position: absolute;
+}
+
+.ScollTop5:hover{
+    cursor: pointer;
+}
+
