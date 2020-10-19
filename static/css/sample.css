@@ -15,7 +15,7 @@ a {
     color: #dc2222;
 }
 
-<<<<<<< Updated upstream
+
 @font-face {
     font-family: 'rd_chulajaruekregular';
     src: url('rd_chulajaruek-webfont.woff2') format('woff2'),
@@ -34,8 +34,7 @@ a {
 
 }
 
-=======
->>>>>>> Stashed changes
+
 #footer {
     position: fixed;
     z-index: 2;
@@ -325,6 +324,7 @@ h1 {
 
 .imgage3bg {
     color: white;
+    font-family: 'rd_chulajaruekregular','sans-serif';
     background-color: black;
     width: 40%;
     height: 50%;
@@ -340,6 +340,7 @@ h1 {
 .imgage4bg {
     color: rgb(28, 224, 37);
     background-color: black;
+    font-family: 'rd_chulajaruekregular','sans-serif';
     width: 40%;
     height: 60%;
     display: block;
@@ -481,14 +482,11 @@ cursor: pointer;
     text-shadow: -1px 0 white, 0 1px white,
       1px 0 white, 0 -1px white;
 }
-<<<<<<< Updated upstream
-#text34{
-    font-family: 'rd_chulajaruekregular','sans-serif';
-}
+
 #text5{
     font-family: 'mitrregular','sans-serif';
 }
-=======
+
 
 .ScollDown{
     width: 5%;
@@ -513,4 +511,4 @@ cursor: pointer;
 .ScollTop:hover{
     cursor: pointer;
 }
->>>>>>> Stashed changes
+
