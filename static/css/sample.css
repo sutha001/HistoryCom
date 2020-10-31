@@ -169,6 +169,32 @@ h2{
     color: white;
 }
 
+.next1{
+   position: absolute;
+   left: 90%;
+   top: 45%;
+   opacity: 55%;
+   z-index: 999;
+   cursor: pointer;
+}
+
+.next1:hover{
+   opacity: 95%;
+}
+.previous:hover{
+   opacity: 95%;
+}
+
+
+.previous{
+    position: absolute;
+    right:90%;
+    top: 45%;
+    opacity: 55%;
+    z-index: 999;
+    cursor: pointer;
+}
+
 .imgage4bg h1 {
     font-weight: lighter;
     margin: 5%;
@@ -193,6 +219,7 @@ h2{
     width: 85%;
     height: 85%;
     margin: 3% 7%;
+    position: absolute;
 }
 
 .imgtitle {
