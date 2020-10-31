@@ -157,6 +157,12 @@ h1 {
     font-size: 24px;
 }
 
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'mitrregular';
+}
+
 .imgage3bg h1 {
     font-weight: lighter;
     margin: 5%;
