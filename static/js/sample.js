@@ -143,7 +143,7 @@ function myFunction() {
 	var x = document.getElementById("myNumber").value;
 	var y = fib(x);
 
-	document.getElementById("demo").innerHTML = y;
+	document.getElementById("demo").innerHTML = '= ' + y;
 
 	var end = new Date().getTime();
 	time = ((end - start) * 0.001) * 1000;
@@ -214,6 +214,12 @@ function count1() {
 
 	document.getElementById("age1skip").disabled = false;
 
+	document.getElementById("start11").style.visibility = "hidden";
+	document.getElementById("age1").style.visibility = "hidden";
+
+	document.getElementById("age1skip").style.visibility = "visible";
+
+
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 9876) || skip11 == 1) {
@@ -244,6 +250,12 @@ function count2() {
 	document.getElementById("wait2").style.visibility = "visible";
 
 	document.getElementById("finis2").style.visibility = "hidden";
+
+	document.getElementById("start22").style.visibility = "hidden";
+	document.getElementById("age2").style.visibility = "hidden";
+
+	document.getElementById("age2skip").style.visibility = "visible";
+
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 987)|| skip22 == 1) {
 			clearInterval(downloadTimer);
@@ -275,6 +287,12 @@ function count3() {
 	document.getElementById("wait3").style.visibility = "visible";
 
 	document.getElementById("finis3").style.visibility = "hidden";
+
+	document.getElementById("start33").style.visibility = "hidden";
+	document.getElementById("age3").style.visibility = "hidden";
+
+	document.getElementById("age3skip").style.visibility = "visible";
+
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 89)|| skip33 == 1) {
 			clearInterval(downloadTimer);
@@ -304,6 +322,12 @@ function count4() {
 	document.getElementById("wait4").style.visibility = "visible";
 
 	document.getElementById("finis4").style.visibility = "hidden";
+
+	document.getElementById("start44").style.visibility = "hidden";
+	document.getElementById("age4").style.visibility = "hidden";
+
+	document.getElementById("age4skip").style.visibility = "visible";
+
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 9)|| skip44 == 1) {
 			clearInterval(downloadTimer);
@@ -333,6 +357,12 @@ function count5() {
 	document.getElementById("wait5").style.visibility = "visible";
 
 	document.getElementById("finis5").style.visibility = "hidden";
+
+	document.getElementById("start55").style.visibility = "hidden";
+	document.getElementById("age5").style.visibility = "hidden";
+
+	document.getElementById("age5skip").style.visibility = "visible";
+
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= time || skip55 == 1) {
 			clearInterval(downloadTimer);

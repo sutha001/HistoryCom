@@ -620,7 +620,7 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
     cursor: pointer;
 }
 
@@ -631,6 +631,7 @@ cursor: pointer;
     top: 4%;
     right: 44%;
     cursor: pointer;
+    visibility: hidden;
 }
 
 #age2skip{
@@ -640,6 +641,7 @@ cursor: pointer;
     top: 4%;
     right: 44%;
     cursor: pointer;
+    visibility: hidden;
 }
 #age3skip{
     position: absolute;
@@ -648,6 +650,7 @@ cursor: pointer;
     top: 4%;
     right: 44%;
     cursor: pointer;
+    visibility: hidden;
 }
 #age4skip{
     position: absolute;
@@ -656,6 +659,7 @@ cursor: pointer;
     top: 4%;
     right: 44%;
     cursor: pointer;
+    visibility: hidden;
 }
 #age5skip{
     position: absolute;
@@ -664,6 +668,7 @@ cursor: pointer;
     top: 4%;
     right: 44%;
     cursor: pointer;
+    visibility: hidden;
 }
 
 
@@ -672,7 +677,7 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
     cursor: pointer;
 }
 #age3{
@@ -680,7 +685,7 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
     cursor: pointer;
 }
 #age4{
@@ -688,7 +693,7 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
     cursor: pointer;
 }
 #age5{
@@ -696,7 +701,7 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
     cursor: pointer;
 }
 
@@ -752,3 +757,28 @@ cursor: pointer;
     cursor: pointer;
 }
 
+#start11{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start22{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start33{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start44{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start55{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
