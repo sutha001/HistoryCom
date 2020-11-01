@@ -457,30 +457,24 @@ h2{
     transform: translate(-50%, -50%);
 }
 .butgen1 {
-    width: 5%;
-    height: 7%;
-    right: 36%;
-    bottom: 46%;
+    right: 33%;
+    bottom: 39%;
     position: absolute;
 }
 .butgen1:hover {
     cursor: pointer;
 }
 .butgen2 {
-    width: 5%;
-    height: 7%;
-    right: 22%;
-    bottom: 55%;
+    right: 8%;
+    bottom: 50%;
     position: absolute;
 }
 .butgen2:hover {
     cursor: pointer;
 }
 .butgen3 {
-    width: 5%;
-    height: 7%;
-    right: 7.5%;
-    bottom: 23%;
+    right: 4%;
+    bottom: 18%;
     position: absolute;
 }
 
@@ -500,8 +494,8 @@ h2{
 }
 
 .butgen5{
-    width: 100%;
-    height: 100%;
+    right: 63%;
+    bottom: 8%;
     position: absolute;
 }
 .butgen5:hover{
@@ -580,10 +574,8 @@ cursor: pointer;
 
 
 .ScollDown{
-    width: 5%;
-    height: 9%;
-    right: 8%;
-    bottom: 50%;
+    right: -11%;
+    bottom: 47%;
     position: absolute;
 }
 
@@ -592,16 +584,35 @@ cursor: pointer;
 }
 
 .ScollTop{
-    width: 5%;
-    height: 9%;
-    right: 8%;
-    bottom: 60%;
+    right: -11%;
+    bottom: 57%;
     position: absolute;
 }
 
 .ScollTop:hover{
     cursor: pointer;
 }
+
+.ScollDown2{
+    right: -18%;
+    bottom: 47%;
+    position: absolute;
+}
+
+.ScollDown2:hover{
+    cursor: pointer;
+}
+
+.ScollTop2{
+    right: -18%;
+    bottom: 57%;
+    position: absolute;
+}
+
+.ScollTop2:hover{
+    cursor: pointer;
+}
+
 
 #age1{
     position: absolute;
