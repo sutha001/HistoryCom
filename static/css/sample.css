@@ -620,6 +620,7 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+    cursor: pointer;
 }
 
 #age1skip{
@@ -671,6 +672,7 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+    cursor: pointer;
 }
 #age3{
     position: absolute;
@@ -678,6 +680,7 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+    cursor: pointer;
 }
 #age4{
     position: absolute;
@@ -685,6 +688,7 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+    cursor: pointer;
 }
 #age5{
     position: absolute;
@@ -692,6 +696,7 @@ cursor: pointer;
     display: inline-block;
     top: 4%;
     left: 1%;
+    cursor: pointer;
 }
 
 #butcal {
