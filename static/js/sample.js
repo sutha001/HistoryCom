@@ -226,7 +226,7 @@ function count1() {
 			document.getElementById("age1skip").disabled = true;
 			skip11 = 0;
 		} else{
-			document.getElementById("timeeie").innerHTML = timeleft + " Seconds Ago";
+			document.getElementById("timeeie").innerHTML = timeleft + " Seconds";
 			document.getElementById("age1").disabled = true;
 			document.getElementById("load").style.visibility = "visible";
 			document.getElementById("wait").style.visibility = "hidden";
@@ -256,7 +256,7 @@ function count2() {
 			skip22 = 0;
 			
 		} else {
-			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds Ago";
+			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds";
 			document.getElementById("age2").disabled = true;
 			document.getElementById("load2").style.visibility = "visible";
 			document.getElementById("wait2").style.visibility = "hidden";
@@ -286,7 +286,7 @@ function count3() {
 			document.getElementById("age3skip").disabled = true;
 			skip33 = 0;
 		} else {
-			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds Ago";
+			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds ";
 			document.getElementById("age3").disabled = true;
 			document.getElementById("load3").style.visibility = "visible";
 			document.getElementById("wait3").style.visibility = "hidden";
@@ -315,7 +315,7 @@ function count4() {
 			document.getElementById("age4skip").disabled = true;
 			skip44 = 0;
 		} else {
-			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds Ago";
+			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds ";
 			document.getElementById("age4").disabled = true;
 			document.getElementById("load4").style.visibility = "visible";
 			document.getElementById("wait4").style.visibility = "hidden";
@@ -344,7 +344,7 @@ function count5() {
 			document.getElementById("age5skip").disabled = true;
 			skip55 = 0;
 		} else {
-			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds Ago";
+			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds ";
 			document.getElementById("age5").disabled = true;
 			document.getElementById("load5").style.visibility = "visible";
 			document.getElementById("wait5").style.visibility = "hidden";

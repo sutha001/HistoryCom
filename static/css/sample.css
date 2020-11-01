@@ -539,11 +539,10 @@ cursor: pointer;
 
 
 .bgnn {
-    width: 60%;
+    width: 80%;
     height: 100%;
-    position: absolute;
     display: block;
-    opacity: 0.8;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -617,7 +616,8 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
 }
 
 #age2skip{
@@ -625,28 +625,32 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
 }
 #age3skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
 }
 #age4skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
 }
 #age5skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
 }
 
 
