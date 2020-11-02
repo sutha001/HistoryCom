@@ -137,7 +137,7 @@ var time;
 
 function myFunction() {
 	document.getElementById("butcal").style.zIndex = 1;
-	
+
 	var start = new Date().getTime();
 
 	var x = document.getElementById("myNumber").value;
@@ -182,23 +182,23 @@ var skip33 = 0;
 var skip44 = 0;
 var skip55 = 0;
 
-function skip1(){
-	var timeleft = time*9876;
+function skip1() {
+	var timeleft = time * 9876;
 	skip11 = 1;
 }
-function skip2(){
-	var timeleft = time*987;
+function skip2() {
+	var timeleft = time * 987;
 	skip22 = 1;
 }
-function skip3(){
-	var timeleft = time*89;
+function skip3() {
+	var timeleft = time * 89;
 	skip33 = 1;
 }
-function skip4(){
-	var timeleft = time*9;
+function skip4() {
+	var timeleft = time * 9;
 	skip44 = 1;
 }
-function skip5(){
+function skip5() {
 	var timeleft = time;
 	skip55 = 1;
 }
@@ -231,7 +231,7 @@ function count1() {
 			document.getElementById("wait").style.visibility = "hidden";
 			document.getElementById("age1skip").disabled = true;
 			skip11 = 0;
-		} else{
+		} else {
 			document.getElementById("timeeie").innerHTML = timeleft + " Seconds";
 			document.getElementById("age1").disabled = true;
 			document.getElementById("load").style.visibility = "visible";
@@ -257,7 +257,7 @@ function count2() {
 	document.getElementById("age2skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 987)|| skip22 == 1) {
+		if (timeleft >= (time * 987) || skip22 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie2").innerHTML = "Finished " + (time * 987) + " Sec";
 			document.getElementById("age2").disabled = false;
@@ -266,7 +266,7 @@ function count2() {
 			document.getElementById("wait2").style.visibility = "hidden";
 			document.getElementById("age2skip").disabled = true;
 			skip22 = 0;
-			
+
 		} else {
 			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds";
 			document.getElementById("age2").disabled = true;
@@ -294,7 +294,7 @@ function count3() {
 	document.getElementById("age3skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 89)|| skip33 == 1) {
+		if (timeleft >= (time * 89) || skip33 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie3").innerHTML = "Finished " + (time * 89) + " Sec";
 			document.getElementById("age3").disabled = false;
@@ -329,7 +329,7 @@ function count4() {
 	document.getElementById("age4skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (time * 9)|| skip44 == 1) {
+		if (timeleft >= (time * 9) || skip44 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie4").innerHTML = "Finished " + (time * 9) + " Sec";
 			document.getElementById("age4").disabled = false;
@@ -443,26 +443,32 @@ function typeWriter5() {
 function scrollSmoothToBottom(id) {
 	var div = document.getElementById(id);
 	$('#' + id).animate({
-	   scrollTop: div.scrollHeight - div.clientHeight
+		scrollTop: div.scrollHeight - div.clientHeight
 	}, 500);
- }
+}
 
- function scrollSmoothToTop (id) {
+function scrollSmoothToTop(id) {
 	var div = document.getElementById(id);
 	$('#' + id).animate({
-	   scrollTop: 0
+		scrollTop: 0
 	}, 500);
- }
+}
 
- function sss() {
+function sss() {
 	var x = document.getElementById("qwe");
 	if (x.style.display === "block") {
-	  x.style.display = "none";
+		x.style.display = "none";
 	} else {
-	  x.style.display = "block";
+		x.style.display = "block";
 	}
-  }
- 
+}
+
+
+function movee() {
+	var element = document.querySelector(".Boxtest");
+	console.log("1")
+	element.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
 
 
 
