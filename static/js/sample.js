@@ -115,17 +115,17 @@ $(function () {
 	startAllParaSystems();
 
 });
-document.getElementById("age1").disabled = true;
-document.getElementById("age2").disabled = true;
-document.getElementById("age3").disabled = true;
-document.getElementById("age4").disabled = true;
-document.getElementById("age5").disabled = true;
+//document.getElementById("age1").disabled = true;
+//document.getElementById("age2").disabled = true;
+//document.getElementById("age3").disabled = true;
+//document.getElementById("age4").disabled = true;
+//document.getElementById("age5").disabled = true;
 
-document.getElementById("age1skip").disabled = true;
-document.getElementById("age2skip").disabled = true;
-document.getElementById("age3skip").disabled = true;
-document.getElementById("age4skip").disabled = true;
-document.getElementById("age5skip").disabled = true;
+//document.getElementById("age1skip").disabled = true;
+//document.getElementById("age2skip").disabled = true;
+//document.getElementById("age3skip").disabled = true;
+//document.getElementById("age4skip").disabled = true;
+//document.getElementById("age5skip").disabled = true;
 
 function fib(n) {
 	if (n < 2) {
@@ -146,19 +146,35 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = '= ' + y;
 
 	var end = new Date().getTime();
-	time = ((end - start) * 0.001) * 1000;
-	console.log(time);
-	document.getElementById("age1").disabled = false;
-	document.getElementById("age2").disabled = false;
-	document.getElementById("age3").disabled = false;
-	document.getElementById("age4").disabled = false;
-	document.getElementById("age5").disabled = false;
+	time = (end - start) * 0.001;
+
+	var milsec = time * 1000;
+	var microsec = time * 1000000;
+	var nanosec = time * 1000000000;
+	var piccosec = time * 1000000000000;
+
+	count1();
+
+
+
+	document.getElementById("timesec").innerHTML = time + " Second";
+	document.getElementById("timemill").innerHTML = milsec + " Millisecond";
+	document.getElementById("timemicro").innerHTML = microsec + " Microsecond";
+	document.getElementById("timenano").innerHTML = nanosec + " Nanosecond";
+	document.getElementById("timepic").innerHTML = piccosec + " Piccosecond";
+
+	//document.getElementById("age1").disabled = false;
+	//document.getElementById("age2").disabled = false;
+	//document.getElementById("age3").disabled = false;
+	//document.getElementById("age4").disabled = false;
+	//document.getElementById("age5").disabled = false;
+
 
 }
 
 document.getElementById("load").style.visibility = "hidden";
-document.getElementById("wait").style.visibility = "visible";
-document.getElementById("finis").style.visibility = "hidden";
+//document.getElementById("wait").style.visibility = "visible";
+//document.getElementById("finis").style.visibility = "hidden";
 
 document.getElementById("load2").style.visibility = "hidden";
 document.getElementById("wait2").style.visibility = "visible";
@@ -205,38 +221,39 @@ function skip5() {
 
 function count1() {
 	console.log("1");
+	onLoad();
 	var timeleft = 0;
 	document.getElementById("load").style.visibility = "hidden";
 
-	document.getElementById("wait").style.visibility = "visible";
+	//document.getElementById("wait").style.visibility = "visible";
 
-	document.getElementById("finis").style.visibility = "hidden";
+	//document.getElementById("finis").style.visibility = "hidden";
 
-	document.getElementById("age1skip").disabled = false;
+	//document.getElementById("age1skip").disabled = false;
 
-	document.getElementById("start11").style.visibility = "hidden";
-	document.getElementById("age1").style.visibility = "hidden";
+	//document.getElementsBId("start11").style.visibility = "hidden";
+	//document.getElementById("age1").style.visibility = "hidden";
 
-	document.getElementById("age1skip").style.visibility = "visible";
+	//document.getElementById("age1skip").style.visibility = "visible";
 
 
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 9876) || skip11 == 1) {
 			clearInterval(downloadTimer);
-			document.getElementById("timeeie").innerHTML = "Finished " + (time * 9876) + " Sec";
-			document.getElementById("age1").disabled = false;
-			document.getElementById("finis").style.visibility = "visible";
-			document.getElementById("load").style.visibility = "hidden";
-			document.getElementById("wait").style.visibility = "hidden";
-			document.getElementById("age1skip").disabled = true;
+			//document.getElementById("timeeie").innerHTML = "Finished " + (time * 9876) + " Sec";
+			//document.getElementById("age1").disabled = false;
+			//document.getElementById("finis").style.visibility = "visible";
+			//document.getElementById("load").style.visibility = "hidden";
+			//document.getElementById("wait").style.visibility = "hidden";
+			//document.getElementById("age1skip").disabled = true;
 			skip11 = 0;
 		} else {
-			document.getElementById("timeeie").innerHTML = timeleft + " Seconds";
-			document.getElementById("age1").disabled = true;
+			//document.getElementById("timeeie").innerHTML = timeleft + " Seconds";
+			//document.getElementById("age1").disabled = true;
 			document.getElementById("load").style.visibility = "visible";
-			document.getElementById("wait").style.visibility = "hidden";
-			document.getElementById("age1skip").disabled = false;
+			//document.getElementById("wait").style.visibility = "hidden";
+			//document.getElementById("age1skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -251,28 +268,28 @@ function count2() {
 
 	document.getElementById("finis2").style.visibility = "hidden";
 
-	document.getElementById("start22").style.visibility = "hidden";
-	document.getElementById("age2").style.visibility = "hidden";
+	//document.getElementById("start22").style.visibility = "hidden";
+	//document.getElementById("age2").style.visibility = "hidden";
 
-	document.getElementById("age2skip").style.visibility = "visible";
+	//document.getElementById("age2skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 987) || skip22 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie2").innerHTML = "Finished " + (time * 987) + " Sec";
-			document.getElementById("age2").disabled = false;
+			//document.getElementById("age2").disabled = false;
 			document.getElementById("finis2").style.visibility = "visible";
 			document.getElementById("load2").style.visibility = "hidden";
 			document.getElementById("wait2").style.visibility = "hidden";
-			document.getElementById("age2skip").disabled = true;
+			//document.getElementById("age2skip").disabled = true;
 			skip22 = 0;
 
 		} else {
 			document.getElementById("timeeie2").innerHTML = timeleft + " Seconds";
-			document.getElementById("age2").disabled = true;
+			//document.getElementById("age2").disabled = true;
 			document.getElementById("load2").style.visibility = "visible";
 			document.getElementById("wait2").style.visibility = "hidden";
-			document.getElementById("age2skip").disabled = false;
+			//document.getElementById("age2skip").disabled = false;
 
 		}
 		timeleft += 1;
@@ -288,27 +305,27 @@ function count3() {
 
 	document.getElementById("finis3").style.visibility = "hidden";
 
-	document.getElementById("start33").style.visibility = "hidden";
-	document.getElementById("age3").style.visibility = "hidden";
+	//document.getElementById("start33").style.visibility = "hidden";
+	//document.getElementById("age3").style.visibility = "hidden";
 
-	document.getElementById("age3skip").style.visibility = "visible";
+	//document.getElementById("age3skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 89) || skip33 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie3").innerHTML = "Finished " + (time * 89) + " Sec";
-			document.getElementById("age3").disabled = false;
+			//document.getElementById("age3").disabled = false;
 			document.getElementById("finis3").style.visibility = "visible";
 			document.getElementById("load3").style.visibility = "hidden";
 			document.getElementById("wait3").style.visibility = "hidden";
-			document.getElementById("age3skip").disabled = true;
+			//document.getElementById("age3skip").disabled = true;
 			skip33 = 0;
 		} else {
 			document.getElementById("timeeie3").innerHTML = timeleft + " Seconds ";
-			document.getElementById("age3").disabled = true;
+			//document.getElementById("age3").disabled = true;
 			document.getElementById("load3").style.visibility = "visible";
 			document.getElementById("wait3").style.visibility = "hidden";
-			document.getElementById("age3skip").disabled = false;
+			//document.getElementById("age3skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -323,27 +340,27 @@ function count4() {
 
 	document.getElementById("finis4").style.visibility = "hidden";
 
-	document.getElementById("start44").style.visibility = "hidden";
-	document.getElementById("age4").style.visibility = "hidden";
+	//document.getElementById("start44").style.visibility = "hidden";
+	//document.getElementById("age4").style.visibility = "hidden";
 
-	document.getElementById("age4skip").style.visibility = "visible";
+	//document.getElementById("age4skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= (time * 9) || skip44 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie4").innerHTML = "Finished " + (time * 9) + " Sec";
-			document.getElementById("age4").disabled = false;
+			//document.getElementById("age4").disabled = false;
 			document.getElementById("finis4").style.visibility = "visible";
 			document.getElementById("load4").style.visibility = "hidden";
 			document.getElementById("wait4").style.visibility = "hidden";
-			document.getElementById("age4skip").disabled = true;
+			//document.getElementById("age4skip").disabled = true;
 			skip44 = 0;
 		} else {
 			document.getElementById("timeeie4").innerHTML = timeleft + " Seconds ";
-			document.getElementById("age4").disabled = true;
+			//document.getElementById("age4").disabled = true;
 			document.getElementById("load4").style.visibility = "visible";
 			document.getElementById("wait4").style.visibility = "hidden";
-			document.getElementById("age4skip").disabled = false;
+			//document.getElementById("age4skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -358,27 +375,27 @@ function count5() {
 
 	document.getElementById("finis5").style.visibility = "hidden";
 
-	document.getElementById("start55").style.visibility = "hidden";
-	document.getElementById("age5").style.visibility = "hidden";
+	//document.getElementById("start55").style.visibility = "hidden";
+	//document.getElementById("age5").style.visibility = "hidden";
 
-	document.getElementById("age5skip").style.visibility = "visible";
+	//document.getElementById("age5skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
 		if (timeleft >= time || skip55 == 1) {
 			clearInterval(downloadTimer);
 			document.getElementById("timeeie5").innerHTML = "Finished " + time + " Sec";
-			document.getElementById("age5").disabled = false;
+			//document.getElementById("age5").disabled = false;
 			document.getElementById("finis5").style.visibility = "visible";
 			document.getElementById("load5").style.visibility = "hidden";
 			document.getElementById("wait5").style.visibility = "hidden";
-			document.getElementById("age5skip").disabled = true;
+			//document.getElementById("age5skip").disabled = true;
 			skip55 = 0;
 		} else {
 			document.getElementById("timeeie5").innerHTML = timeleft + " Seconds ";
-			document.getElementById("age5").disabled = true;
+			//document.getElementById("age5").disabled = true;
 			document.getElementById("load5").style.visibility = "visible";
 			document.getElementById("wait5").style.visibility = "hidden";
-			document.getElementById("age5skip").disabled = false;
+			//document.getElementById("age5skip").disabled = false;
 		}
 		timeleft += 1;
 	}, 1000);
@@ -470,7 +487,13 @@ function movee() {
 	element.scrollIntoView({ behavior: 'smooth', block: 'end' });
 }
 
+function onLoad() {
+	var circle = new ProgressBar.Circle('#load', {
+		strokeWidth: 20,
+		color: '#FCB03C',
+		duration: time*10000,
+		easing: 'easeInOut'
+	});
 
-
-
-
+	circle.animate(1);
+};
