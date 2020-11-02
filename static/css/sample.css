@@ -859,6 +859,9 @@ cursor: pointer;
     background-color: red;
 }
 
-.unloaded{
+.loadBackground{
     z-index: 9999;
+}
+.preloaderCont{
+    z-index: 10000;
 }
