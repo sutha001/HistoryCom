@@ -162,6 +162,11 @@ h2{
     font-size: 35px;
     font-family: 'mitrregular';
 }
+h3{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'mitrregular';
+}
 
 .imgage3bg h1 {
     font-weight: lighter;
