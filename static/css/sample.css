@@ -157,10 +157,53 @@ h1 {
     font-size: 24px;
 }
 
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'mitrregular';
+}
+h3{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'mitrregular';
+}
+
 .imgage3bg h1 {
     font-weight: lighter;
     margin: 5%;
     color: white;
+}
+
+.next1{
+   position: absolute;
+   left: 87%;
+   top: 45%;
+   width: 12%;
+   z-index: 999;
+   animation: pes 1.8s infinite;
+   animation-delay: 1.5s;
+}
+@keyframes pes {
+  from {left: 87%;}
+  to {left: 88%;}
+}
+
+
+.next1:hover{
+   opacity: 95%;
+}
+.previous:hover{
+   opacity: 95%;
+}
+
+
+.previous{
+    position: absolute;
+    right:90%;
+    top: 45%;
+    opacity: 55%;
+    z-index: 999;
+    cursor: pointer;
 }
 
 .imgage4bg h1 {
@@ -185,13 +228,74 @@ h1 {
 
 .boxtitle {
     width: 85%;
-    height: 85%;
+    height: 90%;
     margin: 3% 7%;
+    left: 0%;
+    position: absolute;
+    z-index: 2;
 }
 
 .imgtitle {
     width: 100%;
     height: 100%;
+    z-index: 2;
+}
+
+.err1{
+    left: 14%;
+    bottom: 35%;
+    position: absolute;
+    z-index: 2;
+    animation: ero 1s;
+}
+.err2{
+    left: 11%;
+    bottom: 48%;
+    position: absolute;
+    z-index: 1;
+    animation: ertw 2s;
+}
+.err3{
+    left: 67%;
+    bottom: 55%;
+    position: absolute;
+    z-index: 2;
+    animation: ert 1s;
+}
+.err4{
+    left: 70%;
+    bottom: 42%;
+    position: absolute;
+    z-index: 1;
+    animation: erf 2.5s;
+}
+
+@keyframes ero {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+  from {width: 0%;}
+  to {width: 17%;}
+}
+
+@keyframes ertw {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+  from {width: 0%;}
+  to {width: 14%;}
+}
+
+@keyframes ert {
+  from {opacity: 0.8;}
+  to {opacity: 1;}
+  from {width: 0%;}
+  to {width: 13%;}
+}
+
+@keyframes erf {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+  from {width: 2%;}
+  to {width: 15%;}
 }
 
 .bgpaper {
@@ -201,7 +305,7 @@ h1 {
 }
 
 .bgContent {
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: block;
     position: absolute;
@@ -424,30 +528,27 @@ h1 {
     transform: translate(-50%, -50%);
 }
 .butgen1 {
-    width: 5%;
-    height: 7%;
-    right: 36%;
-    bottom: 46%;
     position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 50%;
+    left: 48%;
+    cursor: pointer;
 }
 .butgen1:hover {
     cursor: pointer;
 }
 .butgen2 {
-    width: 5%;
-    height: 7%;
     right: 22%;
-    bottom: 55%;
+    bottom: 53%;
     position: absolute;
 }
 .butgen2:hover {
     cursor: pointer;
 }
 .butgen3 {
-    width: 5%;
-    height: 7%;
-    right: 7.5%;
-    bottom: 23%;
+    right: 18%;
+    bottom: 24%;
     position: absolute;
 }
 
@@ -458,8 +559,8 @@ h1 {
 .butgen4{
     width: 5%;
     height: 5%;
-    right: 29%;
-    bottom: 16%;
+    right: 29.3%;
+    bottom: 16.5%;
     position: absolute;
 }
 .butgen4:hover{
@@ -467,8 +568,8 @@ h1 {
 }
 
 .butgen5{
-    width: 100%;
-    height: 100%;
+    left:13%;
+    bottom: 13%;
     position: absolute;
 }
 .butgen5:hover{
@@ -506,11 +607,10 @@ cursor: pointer;
 
 
 .bgnn {
-    width: 60%;
+    width: 80%;
     height: 100%;
-    position: absolute;
     display: block;
-    opacity: 0.8;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -519,7 +619,7 @@ cursor: pointer;
 .imgbox{
     width: 8.5%;
     height: 100%;
-    left: 95%;
+    left: 58%;
     top:50%;
     position: absolute;
 }
@@ -535,7 +635,7 @@ cursor: pointer;
 
 .txtposiimg{
     font-size: 28px;
-    left: 95%;
+    left:55%;
     top:5%;
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
@@ -548,10 +648,8 @@ cursor: pointer;
 
 
 .ScollDown{
-    width: 5%;
-    height: 9%;
-    right: 8%;
-    bottom: 50%;
+    right: 19%;
+    bottom: 47%;
     position: absolute;
 }
 
@@ -560,10 +658,8 @@ cursor: pointer;
 }
 
 .ScollTop{
-    width: 5%;
-    height: 9%;
-    right: 8%;
-    bottom: 60%;
+    right: 19%;
+    bottom: 57%;
     position: absolute;
 }
 
@@ -571,12 +667,34 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.ScollDown2{
+    right: 16%;
+    bottom: 47%;
+    position: absolute;
+}
+
+.ScollDown2:hover{
+    cursor: pointer;
+}
+
+.ScollTop2{
+    right: 16%;
+    bottom: 57%;
+    position: absolute;
+}
+
+.ScollTop2:hover{
+    cursor: pointer;
+}
+
+
 #age1{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
+    cursor: pointer;
 }
 
 #age1skip{
@@ -584,7 +702,9 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
 }
 
 #age2skip{
@@ -592,28 +712,36 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
 }
 #age3skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
 }
 #age4skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
 }
 #age5skip{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    right: 1%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
 }
 
 
@@ -622,28 +750,32 @@ cursor: pointer;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
+    cursor: pointer;
 }
 #age3{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
+    cursor: pointer;
 }
 #age4{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
+    cursor: pointer;
 }
 #age5{
     position: absolute;
     text-align: center;
     display: inline-block;
     top: 4%;
-    left: 1%;
+    left: 44%;
+    cursor: pointer;
 }
 
 #butcal {
@@ -698,3 +830,38 @@ cursor: pointer;
     cursor: pointer;
 }
 
+#start11{
+    position: absolute;
+    top:0%;
+    left:38%;
+}
+#start22{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start33{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start44{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+#start55{
+    position: absolute;
+    top:0%;
+    left:37%;
+}
+.histoty{
+    background-color: red;
+}
+
+.loadBackground{
+    z-index: 9999;
+}
+.preloaderCont{
+    z-index: 10000;
+}
