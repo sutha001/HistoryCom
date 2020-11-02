@@ -143,7 +143,7 @@ function myFunction() {
 	var x = document.getElementById("myNumber").value;
 	var y = fib(x);
 
-	document.getElementById("demo").innerHTML = '= ' + y;
+	document.getElementById("demo").innerHTML = 'ลำดับที่&nbsp' + x + '&nbsp=&nbsp' + y;
 
 	var end = new Date().getTime();
 	time = (end - start) * 0.001;
