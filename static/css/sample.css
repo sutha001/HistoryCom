@@ -176,16 +176,18 @@ h3{
 
 .next1{
    position: absolute;
-   left: 87%;
+   left: 88%;
    top: 45%;
    width: 12%;
    z-index: 999;
-   animation: pes 1.8s infinite;
-   animation-delay: 1.5s;
+   animation: pes 2.5s infinite;
+   animation-play-state: playing;
+   transition: 0.2s;
 }
 @keyframes pes {
-  from {left: 87%;}
-  to {left: 88%;}
+  50%{
+        transform: translateX(10px);
+    }
 }
 
 
