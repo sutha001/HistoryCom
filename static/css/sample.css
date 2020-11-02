@@ -864,3 +864,10 @@ cursor: pointer;
 .preloaderCont{
     z-index: 10000;
 }
+.butText{
+    margin-left: 8%;
+    margin-top: -10%;
+    font-size: 20px;
+    font-family: 'mitrregular';
+    position: absolute;
+}
