@@ -858,3 +858,7 @@ cursor: pointer;
 .histoty{
     background-color: red;
 }
+
+.unloaded{
+    z-index: 9999;
+}
