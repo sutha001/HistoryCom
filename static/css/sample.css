@@ -549,7 +549,7 @@ cursor: pointer;
 .imgbox{
     width: 8.5%;
     height: 100%;
-    left: 95%;
+    left: 58%;
     top:50%;
     position: absolute;
 }
@@ -565,7 +565,7 @@ cursor: pointer;
 
 .txtposiimg{
     font-size: 28px;
-    left: 95%;
+    left:55%;
     top:5%;
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
