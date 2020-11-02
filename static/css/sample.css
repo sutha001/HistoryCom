@@ -469,16 +469,16 @@ h2{
     cursor: pointer;
 }
 .butgen2 {
-    right: 8%;
-    bottom: 50%;
+    right: 22%;
+    bottom: 53%;
     position: absolute;
 }
 .butgen2:hover {
     cursor: pointer;
 }
 .butgen3 {
-    right: 4%;
-    bottom: 18%;
+    right: 18%;
+    bottom: 24%;
     position: absolute;
 }
 
@@ -489,8 +489,8 @@ h2{
 .butgen4{
     width: 5%;
     height: 5%;
-    right: 29%;
-    bottom: 16%;
+    right: 29.3%;
+    bottom: 16.5%;
     position: absolute;
 }
 .butgen4:hover{
@@ -498,8 +498,8 @@ h2{
 }
 
 .butgen5{
-    right: 63%;
-    bottom: 8%;
+    left:13%;
+    bottom: 13%;
     position: absolute;
 }
 .butgen5:hover{
@@ -578,7 +578,7 @@ cursor: pointer;
 
 
 .ScollDown{
-    right: -11%;
+    right: 19%;
     bottom: 47%;
     position: absolute;
 }
@@ -588,7 +588,7 @@ cursor: pointer;
 }
 
 .ScollTop{
-    right: -11%;
+    right: 19%;
     bottom: 57%;
     position: absolute;
 }
@@ -598,7 +598,7 @@ cursor: pointer;
 }
 
 .ScollDown2{
-    right: -18%;
+    right: 16%;
     bottom: 47%;
     position: absolute;
 }
@@ -608,7 +608,7 @@ cursor: pointer;
 }
 
 .ScollTop2{
-    right: -18%;
+    right: 16%;
     bottom: 57%;
     position: absolute;
 }
