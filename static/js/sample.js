@@ -115,6 +115,8 @@ $(function () {
 	startAllParaSystems();
 
 });
+
+document.getElementById("popup").style.visibility = "hidden";
 //document.getElementById("age1").disabled = true;
 //document.getElementById("age2").disabled = true;
 //document.getElementById("age3").disabled = true;
@@ -139,6 +141,7 @@ var tim;
 
 function myFunction() {
 	document.getElementById("butcal").style.zIndex = 1;
+	document.getElementById("popup").style.visibility = "visible";
 
 	var start = new Date().getTime();
 
