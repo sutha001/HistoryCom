@@ -866,7 +866,10 @@ cursor: pointer;
 .butText{
     margin-left: 6%;
     margin-top: -10%;
+    text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
     font-size: 20px;
+    text-align: left;
     font-family: 'mitrregular';
     position: absolute;
 }
