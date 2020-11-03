@@ -380,7 +380,7 @@ h3{
 }
 
 .Boxtest {
-    width: 20%;
+    width: 40%;
     height: 30%;
     position: absolute;
     bottom: 0%;
@@ -619,10 +619,9 @@ cursor: pointer;
 }
 
 .imgbox{
-    width: 8.5%;
     height: 100%;
-    left: 58%;
-    top:130%;
+    left: 23%;
+    top:45%;
     position: absolute;
 }
 
@@ -637,7 +636,7 @@ cursor: pointer;
 
 .txtposiimg{
     font-size: 28px;
-    left:55%;
+    left:30%;
     top:5%;
     position: absolute;
     text-shadow: -1px 0 white, 0 1px white,
