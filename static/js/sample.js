@@ -364,7 +364,7 @@ function count5() {
 	//document.getElementById("age5skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= time*9999999999) {
+		if (timeleft >= time * 9999999999) {
 			clearInterval(downloadTimer);
 			//document.getElementById("timeeie5").innerHTML = "Finished " + time + " Sec";
 			//document.getElementById("age5").disabled = false;
@@ -471,11 +471,24 @@ function movee() {
 }
 
 function onLoad1(n) {
-	var sec = 1000000000;
+	var sec;
+	if (n >= 0.001 && n < 0.01) {
+		n = n * 1000;
+		sec = n * 10000000;
+	}
+	else if (n >= 0.01 && n < 0.1) {
+		n = n * 100;
+		sec = n * 10000000;
+	}
+	else if (n >= 0.1 && n < 1) {
+		n = n * 10;
+		sec = n * 10000000;
+	}
+	console.log(sec);
 	var circle = new ProgressBar.Circle('#load', {
 		strokeWidth: 20,
 		color: '#1ce025',
-		duration: n * sec,
+		duration: sec,
 		easing: 'easeInOut'
 	});
 
@@ -483,35 +496,73 @@ function onLoad1(n) {
 };
 
 function onLoad2(n) {
-	var sec = 100000000;
+	var sec;
+	if (n >= 0.001 && n < 0.01) {
+		n = n * 1000;
+		sec = n * 1000000;
+	}
+	else if (n >= 0.01 && n < 0.1) {
+		n = n * 100;
+		sec = n * 1000000;
+	}
+	else if (n >= 0.1 && n < 1) {
+		n = n * 10;
+		sec = n * 1000000;
+	}
 	var circle = new ProgressBar.Circle('#load', {
 		strokeWidth: 20,
 		color: '#1ce025',
-		duration: n * sec,
+		duration: sec,
 		easing: 'easeInOut'
 	});
-
+	console.log(sec);
 	circle.animate(1);
 };
 
 function onLoad3(n) {
-	var sec = 10000000;
+	var sec;
+	if (n >= 0.001 && n < 0.01) {
+		n = n * 1000;
+		sec = n * 100000;
+	}
+	else if (n >= 0.01 && n < 0.1) {
+		n = n * 100;
+		sec = n * 100000;
+	}
+	else if (n >= 0.1 && n < 1) {
+		n = n * 10;
+		sec = n * 100000;
+	}
 	var circle = new ProgressBar.Circle('#load', {
 		strokeWidth: 20,
 		color: '#1ce025',
-		duration: n * sec,
+		duration: sec,
 		easing: 'easeInOut'
 	});
-
+	console.log(sec);
 	circle.animate(1);
 };
 
 function onLoad4(n) {
-	var sec = 1000000;
+	var sec;
+	if (n >= 0.001 && n < 0.01) {
+		n = n * 1000;
+		sec = n * 10000;
+	}
+	else if (n >= 0.01 && n < 0.1) {
+		n = n * 100;
+		sec = n * 10000;
+	}
+	else if (n >= 0.1 && n < 1) {
+		n = n * 10;
+		sec = n * 10000;
+	}
+
+	console.log(sec);
 	var circle = new ProgressBar.Circle('#load', {
 		strokeWidth: 20,
 		color: '#1ce025',
-		duration: n * sec,
+		duration: sec,
 		easing: 'easeInOut'
 	});
 
@@ -519,11 +570,24 @@ function onLoad4(n) {
 };
 
 function onLoad5(n) {
-	var sec = 100000;
+	var sec;
+	if (n >= 0.001 && n < 0.01) {
+		n = n * 1000;
+		sec = n * 1000;
+	}
+	else if (n >= 0.01 && n < 0.1) {
+		n = n * 100;
+		sec = n * 1000;
+	}
+	else if (n >= 0.1 && n < 1) {
+		n = n * 10;
+		sec = n * 1000;
+	}
+	console.log(sec);
 	var circle = new ProgressBar.Circle('#load', {
 		strokeWidth: 20,
 		color: '#1ce025',
-		duration: n * sec,
+		duration: sec,
 		easing: 'easeInOut'
 	});
 
