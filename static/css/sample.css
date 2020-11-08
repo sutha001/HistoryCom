@@ -410,11 +410,16 @@ h3{
 }
 
 .Boxtest {
+    cursor: pointer;
     width: 40%;
     height: 30%;
     position: absolute;
     bottom: 0%;
+    left: -35%;
+    background-color: aquamarine;
+    
 }
+
 
 .box1 {
 

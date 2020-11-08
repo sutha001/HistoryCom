@@ -631,3 +631,35 @@ function onLoad5(n) {
 
 	circle.animate(1);
 };
+var givemov = 0;
+function myMove() {
+	if (givemov == 0) {
+		var elem = document.getElementById("butcal");
+		var pos = -35;
+		var id = setInterval(frame, 40);
+		function frame() {
+			if (pos == 0) {
+				clearInterval(id);
+			} else {
+				pos++;
+				elem.style.left = pos + '%';
+			}
+		}
+		givemov = 1;
+	}
+	else{
+		var elem = document.getElementById("butcal");
+		var pos = 0;
+		var id = setInterval(frame, 40);
+		function frame() {
+			if (pos == -35) {
+				clearInterval(id);
+			} else {
+				pos--;
+				elem.style.left = pos + '%';
+			}
+		}
+		givemov = 0;
+	}
+
+}
