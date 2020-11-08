@@ -184,28 +184,27 @@ h3{
    animation-play-state: playing;
    transition: 0.2s;
 }
+
 @keyframes pes {
   50%{
         transform: translateX(10px);
     }
 }
 
-
-.next1:hover{
-   opacity: 95%;
+.ne{
+   position: absolute;
+   left: 90%;
+   top: 45%;
+   z-index: 999;
+   opacity: 90%;
 }
-.previous:hover{
-   opacity: 95%;
-}
 
-
-.previous{
+.pre{
     position: absolute;
     right:90%;
     top: 45%;
-    opacity: 55%;
+    opacity: 90%;
     z-index: 999;
-    cursor: pointer;
 }
 
 .imgage4bg h1 {
