@@ -1067,6 +1067,6 @@ h3 {
 .nextbar{
     cursor: pointer;
     position:absolute;
-    left: 85%;
-    top: 41%;
+    margin-left: 87%;
+    top: 39%;
 }
