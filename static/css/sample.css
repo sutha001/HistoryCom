@@ -222,18 +222,34 @@ h3 {
 
 .ne {
     position: absolute;
-    left: 90%;
+    margin-left: 90%;
     top: 45%;
     z-index: 999;
     opacity: 90%;
+    animation: nre 2.5s infinite;
+    animation-play-state: playing;
+    transition: 0.2s;
+}
+@keyframes nre {
+    50% {
+        transform: translateX(10px);
+    }
 }
 
 .pre {
     position: absolute;
-    right: 90%;
+    margin-right: 90%;
     top: 45%;
     opacity: 90%;
     z-index: 999;
+    animation: pr 2.5s infinite;
+    animation-play-state: playing;
+    transition: 0.2s;
+}
+@keyframes pr {
+    50% {
+        transform: translateX(-10px);
+    }
 }
 
 .dec {
