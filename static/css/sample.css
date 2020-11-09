@@ -15,25 +15,19 @@ a {
     color: #dc2222;
 }
 
-
 @font-face {
     font-family: 'rd_chulajaruekregular';
-    src: url('rd_chulajaruek-webfont.woff2') format('woff2'),
-         url('rd_chulajaruek-webfont.woff') format('woff');
+    src: url('rd_chulajaruek-webfont.woff2') format('woff2'), url('rd_chulajaruek-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'mitrregular';
-    src: url('mitr-regular-webfont.woff2') format('woff2'),
-         url('mitr-regular-webfont.woff') format('woff');
+    src: url('mitr-regular-webfont.woff2') format('woff2'), url('mitr-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 #footer {
     position: fixed;
@@ -80,21 +74,30 @@ body {
     background: black;
 }
 
-
-.histoty{
+.histoty {
     position: absolute;
     width: 30%;
-    right: 50%;
-    top:32%;
+    margin-left: -33%;
+    margin-top: 15%;
     background: green;
+    animation: ex;
+    animation-duration: 2s;
+}
+@keyframes ex{
+    from{
+        margin-left: -70%;
+    }
+    to{
+        margin-left: -33%;
+    }
 }
 
-.histoty1{
+.histoty1 {
     position: absolute;
     background: red;
     width: 50%;
     right: 25%;
-    top:55%;
+    top: 55%;
 }
 
 .popularResolution {
@@ -174,12 +177,13 @@ h1 {
     font-size: 24px;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 35px;
     font-family: 'mitrregular';
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 32px;
     font-family: 'mitrregular';
@@ -191,51 +195,63 @@ h3{
     color: white;
 }
 
-.next1{
-   position: absolute;
-   left: 88%;
-   top: 45%;
-   width: 12%;
-   z-index: 999;
-   animation: pes 2.5s infinite;
-   animation-play-state: playing;
-   transition: 0.2s;
+.next1 {
+    position: absolute;
+    left: 88%;
+    top: 45%;
+    width: 12%;
+    z-index: 999;
+    animation: pes 2.5s infinite;
+    animation-play-state: playing;
+    transition: 0.2s;
 }
 
 @keyframes pes {
-  50%{
+    50% {
         transform: translateX(10px);
     }
 }
 
-.ne{
-   position: absolute;
-   left: 90%;
-   top: 45%;
-   z-index: 999;
-   opacity: 90%;
+.ne {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+    z-index: 999;
+    opacity: 90%;
 }
 
-.pre{
+.pre {
     position: absolute;
-    right:90%;
+    right: 90%;
     top: 45%;
     opacity: 90%;
     z-index: 999;
 }
 
-.dec{
+.dec {
     position: absolute;
-   left: 50%;
-   top: 15%;
-   z-index: 999;
+    left: 50%;
+    top: 15%;
+    z-index: 999;
 }
 
-.dec2{
+.dec2 {
     position: absolute;
-   left: 25%;
-   top: 5%;
-   z-index: 999;
+    width: 50%;
+    margin-left: 24%;
+    margin-top:5%;
+    z-index: 999;
+    animation-name: exa;
+    animation-duration: 1s;
+}
+
+@keyframes exa{
+    from{
+        margin-top:-15%;
+    }
+    to{
+        margin-top:5%;
+    }
 }
 
 .imgage4bg h1 {
@@ -273,28 +289,31 @@ h3{
     z-index: 2;
 }
 
-.err1{
+.err1 {
     left: 14%;
     bottom: 35%;
     position: absolute;
     z-index: 2;
     animation: ero 1s;
 }
-.err2{
+
+.err2 {
     left: 11%;
     bottom: 48%;
     position: absolute;
     z-index: 1;
     animation: ertw 2s;
 }
-.err3{
+
+.err3 {
     left: 67%;
     bottom: 55%;
     position: absolute;
     z-index: 2;
     animation: ert 1s;
 }
-.err4{
+
+.err4 {
     left: 70%;
     bottom: 42%;
     position: absolute;
@@ -303,31 +322,63 @@ h3{
 }
 
 @keyframes ero {
-  from {opacity: 0.5;}
-  to {opacity: 1;}
-  from {width: 0%;}
-  to {width: 17%;}
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        width: 0%;
+    }
+    to {
+        width: 17%;
+    }
 }
 
 @keyframes ertw {
-  from {opacity: 0.5;}
-  to {opacity: 1;}
-  from {width: 0%;}
-  to {width: 14%;}
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        width: 0%;
+    }
+    to {
+        width: 14%;
+    }
 }
 
 @keyframes ert {
-  from {opacity: 0.8;}
-  to {opacity: 1;}
-  from {width: 0%;}
-  to {width: 13%;}
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        width: 0%;
+    }
+    to {
+        width: 13%;
+    }
 }
 
 @keyframes erf {
-  from {opacity: 0.5;}
-  to {opacity: 1;}
-  from {width: 2%;}
-  to {width: 15%;}
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        width: 2%;
+    }
+    to {
+        width: 15%;
+    }
 }
 
 .bgpaper {
@@ -357,6 +408,7 @@ h3{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .textContent1 {
     margin: auto;
     font-size: 22px;
@@ -365,6 +417,7 @@ h3{
     padding-top: 2%;
     text-align: left;
 }
+
 .textContent2 {
     margin: auto;
     font-size: 23px;
@@ -373,7 +426,8 @@ h3{
     padding-top: 2%;
     text-align: left;
 }
-.textContent3{
+
+.textContent3 {
     margin: auto;
     font-size: 23px;
     padding-left: 5%;
@@ -381,7 +435,8 @@ h3{
     padding-top: 2%;
     text-align: left;
 }
-.textContent4{
+
+.textContent4 {
     margin: auto;
     font-size: 23px;
     padding-left: 5%;
@@ -389,7 +444,8 @@ h3{
     padding-top: 2%;
     text-align: left;
 }
-.textContent5{
+
+.textContent5 {
     margin: auto;
     font-size: 23px;
     padding-left: 5%;
@@ -417,12 +473,9 @@ h3{
     bottom: 0%;
     left: -35%;
     background-color: aquamarine;
-    
 }
 
-
 .box1 {
-
     width: 90%;
     height: 10%;
     position: absolute;
@@ -431,7 +484,6 @@ h3{
 }
 
 .box2 {
- 
     width: 90%;
     height: 10%;
     position: absolute;
@@ -448,7 +500,6 @@ h3{
 }
 
 .box4 {
-
     width: 90%;
     height: 10%;
     position: absolute;
@@ -457,13 +508,13 @@ h3{
 }
 
 .box5 {
-
     width: 90%;
     height: 10%;
     position: absolute;
     margin: 5%;
     bottom: 5%;
 }
+
 #age1scoll {
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
@@ -478,15 +529,13 @@ h3{
     border-radius: 30px;
     display: none;
     z-index: -1;
-    font-family: 'mitrregular','sans-serif';
+    font-family: 'mitrregular', 'sans-serif';
     font-size: 18px;
-    
-
 }
 
 #age2scoll {
     color: white;
-    background-color:  rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 70%;
     height: 60%;
     position: absolute;
@@ -498,12 +547,12 @@ h3{
     border-radius: 30px;
     display: none;
     z-index: -1;
-    font-family: 'mitrregular','sans-serif';
+    font-family: 'mitrregular', 'sans-serif';
 }
 
 .imgage3bg {
     color: white;
-    font-family: 'rd_chulajaruekregular','sans-serif';
+    font-family: 'rd_chulajaruekregular', 'sans-serif';
     background-color: black;
     width: 40%;
     height: 50%;
@@ -519,7 +568,7 @@ h3{
 .imgage4bg {
     color: rgb(28, 224, 37);
     background-color: black;
-    font-family: 'rd_chulajaruekregular','sans-serif';
+    font-family: 'rd_chulajaruekregular', 'sans-serif';
     width: 40%;
     height: 60%;
     display: block;
@@ -564,6 +613,7 @@ h3{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .butgen1 {
     position: absolute;
     text-align: center;
@@ -572,17 +622,21 @@ h3{
     left: 48%;
     cursor: pointer;
 }
+
 .butgen1:hover {
     cursor: pointer;
 }
+
 .butgen2 {
     right: 22%;
     bottom: 53%;
     position: absolute;
 }
+
 .butgen2:hover {
     cursor: pointer;
 }
+
 .butgen3 {
     right: 18%;
     bottom: 24%;
@@ -593,45 +647,49 @@ h3{
     cursor: pointer;
 }
 
-.butgen4{
+.butgen4 {
     width: 5%;
     height: 5%;
     right: 29.3%;
     bottom: 16.5%;
     position: absolute;
 }
-.butgen4:hover{
+
+.butgen4:hover {
     cursor: pointer;
 }
 
-.butgen5{
-    left:13%;
+.butgen5 {
+    left: 13%;
     bottom: 13%;
     position: absolute;
 }
-.butgen5:hover{
+
+.butgen5:hover {
     cursor: pointer;
 }
 
-.clickicon{
+.clickicon {
     width: 5%;
     height: 5%;
     right: 29%;
     bottom: 8%;
     position: absolute;
 }
-.boxgen5{
+
+.boxgen5 {
     width: 7%;
     height: 8%;
     left: 12%;
     bottom: 13%;
     position: absolute;
 }
-.boxgen5:hover{
-cursor: pointer;
+
+.boxgen5:hover {
+    cursor: pointer;
 }
 
-.backmac{
+.backmac {
     background-color: rgb(145, 145, 145);
     width: 20%;
     height: 30%;
@@ -641,7 +699,6 @@ cursor: pointer;
     border-radius: 30px;
     display: none;
 }
-
 
 .bgnn {
     width: 80%;
@@ -653,78 +710,71 @@ cursor: pointer;
     transform: translate(-50%, -50%);
 }
 
-.imgbox{
+.imgbox {
     height: 100%;
     left: 23%;
-    top:45%;
+    top: 45%;
     position: absolute;
 }
 
-.txtbox{
+.txtbox {
     font-size: 28px;
-    
-    text-shadow: -1px 0 white, 0 1px white,
-      1px 0 white, 0 -1px white;
-    
-    
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.txtposiimg{
+.txtposiimg {
     font-size: 28px;
-    left:30%;
-    top:5%;
+    left: 30%;
+    top: 5%;
     position: absolute;
-    text-shadow: -1px 0 white, 0 1px white,
-      1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#text5{
-    font-family: 'mitrregular','sans-serif';
+#text5 {
+    font-family: 'mitrregular', 'sans-serif';
 }
 
-
-.ScollDown{
+.ScollDown {
     right: 19%;
     bottom: 47%;
     position: absolute;
 }
 
-.ScollDown:hover{
+.ScollDown:hover {
     cursor: pointer;
 }
 
-.ScollTop{
+.ScollTop {
     right: 19%;
     bottom: 57%;
     position: absolute;
 }
 
-.ScollTop:hover{
+.ScollTop:hover {
     cursor: pointer;
 }
 
-.ScollDown2{
+.ScollDown2 {
     right: 16%;
     bottom: 47%;
     position: absolute;
 }
 
-.ScollDown2:hover{
+.ScollDown2:hover {
     cursor: pointer;
 }
 
-.ScollTop2{
+.ScollTop2 {
     right: 16%;
     bottom: 57%;
     position: absolute;
 }
 
-.ScollTop2:hover{
+.ScollTop2:hover {
     cursor: pointer;
 }
 
-
-#age1{
+#age1 {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -733,7 +783,7 @@ cursor: pointer;
     cursor: pointer;
 }
 
-#age1skip{
+#age1skip {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -743,34 +793,7 @@ cursor: pointer;
     visibility: hidden;
 }
 
-#age2skip{
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    top: 4%;
-    right: 44%;
-    cursor: pointer;
-    visibility: hidden;
-}
-#age3skip{
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    top: 4%;
-    right: 44%;
-    cursor: pointer;
-    visibility: hidden;
-}
-#age4skip{
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    top: 4%;
-    right: 44%;
-    cursor: pointer;
-    visibility: hidden;
-}
-#age5skip{
+#age2skip {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -780,8 +803,37 @@ cursor: pointer;
     visibility: hidden;
 }
 
+#age3skip {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
+}
 
-#age2{
+#age4skip {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#age5skip {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    top: 4%;
+    right: 44%;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#age2 {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -789,7 +841,8 @@ cursor: pointer;
     left: 44%;
     cursor: pointer;
 }
-#age3{
+
+#age3 {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -797,7 +850,8 @@ cursor: pointer;
     left: 44%;
     cursor: pointer;
 }
-#age4{
+
+#age4 {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -805,7 +859,8 @@ cursor: pointer;
     left: 44%;
     cursor: pointer;
 }
-#age5{
+
+#age5 {
     position: absolute;
     text-align: center;
     display: inline-block;
@@ -818,31 +873,33 @@ cursor: pointer;
     z-index: -1;
 }
 
-.timeText{
-    font-family: 'mitrregular','sans-serif';
+.timeText {
+    font-family: 'mitrregular', 'sans-serif';
 }
-
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
 
-  .ScollDown5{
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ScollDown5 {
     width: 5%;
     height: 9%;
     right: 5%;
@@ -850,11 +907,11 @@ cursor: pointer;
     position: absolute;
 }
 
-.ScollDown5:hover{
+.ScollDown5:hover {
     cursor: pointer;
 }
 
-.ScollTop5{
+.ScollTop5 {
     width: 5%;
     height: 9%;
     right: 5%;
@@ -862,47 +919,52 @@ cursor: pointer;
     position: absolute;
 }
 
-.ScollTop5:hover{
+.ScollTop5:hover {
     cursor: pointer;
 }
 
-#start11{
+#start11 {
     position: absolute;
-    top:0%;
-    left:38%;
-}
-#start22{
-    position: absolute;
-    top:0%;
-    left:37%;
-}
-#start33{
-    position: absolute;
-    top:0%;
-    left:37%;
-}
-#start44{
-    position: absolute;
-    top:0%;
-    left:37%;
-}
-#start55{
-    position: absolute;
-    top:0%;
-    left:37%;
+    top: 0%;
+    left: 38%;
 }
 
-.loadBackground{
+#start22 {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+
+#start33 {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+
+#start44 {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+
+#start55 {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+
+.loadBackground {
     z-index: 9999;
 }
-.preloaderCont{
+
+.preloaderCont {
     z-index: 10000;
 }
-.butText{
+
+.butText {
     margin-left: 6%;
     margin-top: -10%;
-    text-shadow: -1px 0 white, 0 1px white,
-      1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-size: 20px;
     text-align: left;
     font-family: 'mitrregular';
@@ -961,4 +1023,30 @@ cursor: pointer;
 
 .popover__message {
     text-align: center;
+}
+
+#summ{
+
+}
+
+#age6coll{
+    display: none;
+}
+
+#textContent6{
+    width: 40%;
+    z-index: 1;
+    position: absolute;
+    background-color: #dc2222;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#summaryh2{
+    width: 40%;
+    position: absolute;
+    background-color: #dc2222;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

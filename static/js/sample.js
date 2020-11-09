@@ -155,10 +155,10 @@ function myFunction() {
 
 	tim = 0;
 
-	var milsec = time * 1000;
-	var microsec = time * 1000000;
-	var nanosec = time * 1000000000;
-	var piccosec = time * 1000000000000;
+	var milsec = time / 1000;
+	var microsec = time / 1000000;
+	var nanosec = time / 1000000000;
+	var piccosec = time / 1000000000000;
 
 	count1();
 	count2();
@@ -168,11 +168,11 @@ function myFunction() {
 
 	console.log(time);
 
-	document.getElementById("timesec").innerHTML = time + " Second";
-	document.getElementById("timemill").innerHTML = milsec + " Millisecond";
-	document.getElementById("timemicro").innerHTML = microsec + " Microsecond";
-	document.getElementById("timenano").innerHTML = nanosec + " Nanosecond";
-	document.getElementById("timepic").innerHTML = piccosec + " Piccosecond";
+	document.getElementById("timesec").innerHTML = time + " second";
+	document.getElementById("timemill").innerHTML = milsec + " millisecond";
+	document.getElementById("timemicro").innerHTML = microsec + " microsecond";
+	document.getElementById("timenano").innerHTML = nanosec + " nanosecond";
+	document.getElementById("timepic").innerHTML = piccosec + " picosecond";
 
 	//document.getElementById("age1").disabled = false;
 	//document.getElementById("age2").disabled = false;
@@ -437,6 +437,19 @@ var speed3 = 30;
 var speed4 = 30;
 var speed5 = 30;
 
+var i6 = 0;
+var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phoneปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์..ใครจะไปรู้กันล่ะ '
+var speed6 = 30;
+
+function typeWriter6(){
+	document.getElementById("age6coll").style.display ="contents";
+	document.getElementById("summ").style.display="none";
+	if (i6 < txt6.length) {
+		document.getElementById("textContent6").innerHTML += txt6.charAt(i6);
+		i6++;
+		setTimeout(typeWriter6, speed6);
+	}
+}
 function typeWriter1() {
 	document.getElementById("age1scoll").style.zIndex = 1;
 	if (i1 < txt1.length) {
@@ -647,7 +660,7 @@ function myMove() {
 		}
 		givemov = 1;
 	}
-	else{
+	else {
 		var elem = document.getElementById("butcal");
 		var pos = 0;
 		var id = setInterval(frame, 40);
