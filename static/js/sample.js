@@ -670,7 +670,7 @@ function onLoad5(n) {
 };
 var givemov = 0;
 function myMove() {
-	if (givemov == 0) {
+	if (givemov == 1) {
 		var elem = document.getElementById("butcal");
 		var elemnex = document.getElementById("nextbarid");
 		var pos = -35;
@@ -693,7 +693,7 @@ function myMove() {
 				elemnex.style.transform = "rotate("+rot+"deg)";
 			}
 		}
-		givemov = 1;
+		givemov = 0;
 	}
 	else {
 		var elem = document.getElementById("butcal");
@@ -718,7 +718,7 @@ function myMove() {
 				elemnex.style.transform = "rotate("+rot+"deg)";
 			}
 		}
-		givemov = 0;
+		givemov = 1;
 	}
 
 }
