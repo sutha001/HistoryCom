@@ -483,7 +483,6 @@ h3 {
 }
 
 .Boxtest {
-    cursor: pointer;
     width: 40%;
     height: 30%;
     position: absolute;
@@ -1066,8 +1065,8 @@ h3 {
 }
 
 .nextbar{
+    cursor: pointer;
     position:absolute;
-    left: 93%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 85%;
+    top: 41%;
 }

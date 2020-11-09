@@ -672,6 +672,7 @@ var givemov = 0;
 function myMove() {
 	if (givemov == 0) {
 		var elem = document.getElementById("butcal");
+		var elemnex = document.getElementById("nextbarid");
 		var pos = -35;
 		var id = setInterval(frame, 20);
 		function frame() {
@@ -682,10 +683,21 @@ function myMove() {
 				elem.style.left = pos + '%';
 			}
 		}
+		var rot = 0;
+		var id2 = setInterval(frame2, 1);
+		function frame2(){
+			if (rot == 180) {
+				clearInterval(id2);
+			} else {
+				rot++;
+				elemnex.style.transform = "rotate("+rot+"deg)";
+			}
+		}
 		givemov = 1;
 	}
 	else {
 		var elem = document.getElementById("butcal");
+		var elemnex = document.getElementById("nextbarid");
 		var pos = 0;
 		var id = setInterval(frame, 20);
 		function frame() {
@@ -694,6 +706,16 @@ function myMove() {
 			} else {
 				pos--;
 				elem.style.left = pos + '%';
+			}
+		}
+		var rot = 180;
+		var id2 = setInterval(frame2, 1);
+		function frame2(){
+			if (rot == 0) {
+				clearInterval(id2);
+			} else {
+				rot--;
+				elemnex.style.transform = "rotate("+rot+"deg)";
 			}
 		}
 		givemov = 0;
