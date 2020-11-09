@@ -168,11 +168,35 @@ function myFunction() {
 
 	console.log(time);
 
+	var supp = 0;
+
+	if (time >= 0.001 && time < 0.01) {
+		tim = time * 1000;
+		supp = 3;
+	}
+	else if (time >= 0.01 && time < 0.1) {
+		tim = time * 100;
+		supp = 2;
+	}
+	else if (time >= 0.1 && time < 1) {
+		tim = time * 10;
+		supp = 1;
+	}
+
+	var milsec = time / 1000;
+	var microsec = tim / 1000000;
+	var nanosec = tim / 1000000000;
+	var piccosec = tim / 1000000000000;
+
+	var aa = -6 - supp;
+	var bb = -9 - supp;
+	var cc = -12 - supp;
+
 	document.getElementById("timesec").innerHTML = time + " second";
 	document.getElementById("timemill").innerHTML = milsec + " millisecond";
-	document.getElementById("timemicro").innerHTML = microsec + " microsecond";
-	document.getElementById("timenano").innerHTML = nanosec + " nanosecond";
-	document.getElementById("timepic").innerHTML = piccosec + " picosecond";
+	document.getElementById("timemicro").innerHTML = tim + "X10"+ "<sup>"+ aa +"</sup>" + " microsecond";
+	document.getElementById("timenano").innerHTML = tim + "X10"+ "<sup>"+ bb +"</sup>" + " nanosecond";
+	document.getElementById("timepic").innerHTML = tim + "X10"+ "<sup>"+ cc +"</sup>" + " picosecond";
 
 	//document.getElementById("age1").disabled = false;
 	//document.getElementById("age2").disabled = false;
