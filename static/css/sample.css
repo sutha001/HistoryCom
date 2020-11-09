@@ -79,7 +79,6 @@ body {
     width: 30%;
     margin-left: -33%;
     margin-top: 15%;
-    background: green;
     animation: ex;
     animation-duration: 2s;
 }
@@ -94,10 +93,19 @@ body {
 
 .histoty1 {
     position: absolute;
-    background: red;
     width: 50%;
-    right: 25%;
-    top: 55%;
+    margin-left: -25%;
+    margin-top: 30%;
+    animation: exx;
+    animation-duration: 1s;
+}
+@keyframes exx{
+    from{
+        margin-top: 50%;
+    }
+    to{
+        margin-top: 30%;
+    }
 }
 
 .popularResolution {
@@ -230,9 +238,19 @@ h3 {
 
 .dec {
     position: absolute;
-    left: 50%;
-    top: 15%;
+    margin-left: 50%;
+    margin-top: 7%;
     z-index: 999;
+    animation-name: exaa;
+    animation-duration: 2s;
+}
+@keyframes exaa{
+    from{
+        margin-top:40%;
+    }
+    to{
+        margin-top:7%;
+    }
 }
 
 .dec2 {
@@ -242,9 +260,8 @@ h3 {
     margin-top:5%;
     z-index: 999;
     animation-name: exa;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
-
 @keyframes exa{
     from{
         margin-top:-15%;
@@ -1042,7 +1059,6 @@ h3 {
     width: 40%;
     z-index: 1;
     position: absolute;
-    background-color: #dc2222;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
