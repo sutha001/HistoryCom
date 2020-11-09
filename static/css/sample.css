@@ -1064,11 +1064,10 @@ h3 {
     transform: translate(-50%, -50%);
     line-height: 5vh;
 }
-#summaryh2{
-    width: 40%;
-    position: absolute;
-    background-color: #dc2222;
-    left: 50%;
+
+.nextbar{
+    position:absolute;
+    left: 93%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
