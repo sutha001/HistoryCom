@@ -472,7 +472,8 @@ h3 {
     position: absolute;
     bottom: 0%;
     left: -35%;
-    background-color: aquamarine;
+    background-color:rgb(0,0,0,0.65);
+    border-radius:20px;
 }
 
 .box1 {
@@ -480,6 +481,7 @@ h3 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    color: white;
     bottom: 65%;
 }
 
@@ -488,6 +490,7 @@ h3 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    color: white;
     bottom: 50%;
 }
 
@@ -496,6 +499,7 @@ h3 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    color: white;
     bottom: 35%;
 }
 
@@ -504,6 +508,7 @@ h3 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    color: white;
     bottom: 20%;
 }
 
@@ -512,6 +517,7 @@ h3 {
     height: 10%;
     position: absolute;
     margin: 5%;
+    color: white;
     bottom: 5%;
 }
 
@@ -719,7 +725,6 @@ h3 {
 
 .txtbox {
     font-size: 28px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .txtposiimg {
@@ -1041,6 +1046,7 @@ h3 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    line-height: 5vh;
 }
 #summaryh2{
     width: 40%;

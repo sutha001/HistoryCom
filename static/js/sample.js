@@ -439,7 +439,7 @@ var speed5 = 30;
 
 var i6 = 0;
 var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phoneปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์..ใครจะไปรู้กันล่ะ '
-var speed6 = 30;
+var speed6 = 60;
 
 function typeWriter6(){
 	document.getElementById("age6coll").style.display ="contents";
@@ -649,7 +649,7 @@ function myMove() {
 	if (givemov == 0) {
 		var elem = document.getElementById("butcal");
 		var pos = -35;
-		var id = setInterval(frame, 40);
+		var id = setInterval(frame, 20);
 		function frame() {
 			if (pos == 0) {
 				clearInterval(id);
@@ -663,7 +663,7 @@ function myMove() {
 	else {
 		var elem = document.getElementById("butcal");
 		var pos = 0;
-		var id = setInterval(frame, 40);
+		var id = setInterval(frame, 20);
 		function frame() {
 			if (pos == -35) {
 				clearInterval(id);
