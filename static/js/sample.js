@@ -182,6 +182,9 @@ function myFunction() {
 		tim = time * 10;
 		supp = 1;
 	}
+	else if (time >= 1){
+		tim = time;
+	}
 
 	var milsec = time / 1000;
 	var microsec = tim / 1000000;
@@ -545,129 +548,7 @@ function movee() {
 	element.scrollIntoView({ behavior: 'smooth', block: 'end' });
 }
 
-function onLoad1(n) {
-	var sec;
-	if (n >= 0.001 && n < 0.01) {
-		n = n * 1000;
-		sec = n * 10000000;
-	}
-	else if (n >= 0.01 && n < 0.1) {
-		n = n * 100;
-		sec = n * 10000000;
-	}
-	else if (n >= 0.1 && n < 1) {
-		n = n * 10;
-		sec = n * 10000000;
-	}
-	console.log(sec);
-	var circle = new ProgressBar.Circle('#load', {
-		strokeWidth: 20,
-		color: '#1ce025',
-		duration: sec,
-		easing: 'easeInOut'
-	});
 
-	circle.animate(1);
-};
-
-function onLoad2(n) {
-	var sec;
-	if (n >= 0.001 && n < 0.01) {
-		n = n * 1000;
-		sec = n * 1000000;
-	}
-	else if (n >= 0.01 && n < 0.1) {
-		n = n * 100;
-		sec = n * 1000000;
-	}
-	else if (n >= 0.1 && n < 1) {
-		n = n * 10;
-		sec = n * 1000000;
-	}
-	var circle = new ProgressBar.Circle('#load', {
-		strokeWidth: 20,
-		color: '#1ce025',
-		duration: sec,
-		easing: 'easeInOut'
-	});
-	console.log(sec);
-	circle.animate(1);
-};
-
-function onLoad3(n) {
-	var sec;
-	if (n >= 0.001 && n < 0.01) {
-		n = n * 1000;
-		sec = n * 100000;
-	}
-	else if (n >= 0.01 && n < 0.1) {
-		n = n * 100;
-		sec = n * 100000;
-	}
-	else if (n >= 0.1 && n < 1) {
-		n = n * 10;
-		sec = n * 100000;
-	}
-	var circle = new ProgressBar.Circle('#load', {
-		strokeWidth: 20,
-		color: '#1ce025',
-		duration: sec,
-		easing: 'easeInOut'
-	});
-	console.log(sec);
-	circle.animate(1);
-};
-
-function onLoad4(n) {
-	var sec;
-	if (n >= 0.001 && n < 0.01) {
-		n = n * 1000;
-		sec = n * 10000;
-	}
-	else if (n >= 0.01 && n < 0.1) {
-		n = n * 100;
-		sec = n * 10000;
-	}
-	else if (n >= 0.1 && n < 1) {
-		n = n * 10;
-		sec = n * 10000;
-	}
-
-	console.log(sec);
-	var circle = new ProgressBar.Circle('#load', {
-		strokeWidth: 20,
-		color: '#1ce025',
-		duration: sec,
-		easing: 'easeInOut'
-	});
-
-	circle.animate(1);
-};
-
-function onLoad5(n) {
-	var sec;
-	if (n >= 0.001 && n < 0.01) {
-		n = n * 1000;
-		sec = n * 1000;
-	}
-	else if (n >= 0.01 && n < 0.1) {
-		n = n * 100;
-		sec = n * 1000;
-	}
-	else if (n >= 0.1 && n < 1) {
-		n = n * 10;
-		sec = n * 1000;
-	}
-	console.log(sec);
-	var circle = new ProgressBar.Circle('#load', {
-		strokeWidth: 20,
-		color: '#1ce025',
-		duration: sec,
-		easing: 'easeInOut'
-	});
-
-	circle.animate(1);
-};
 var givemov = 0;
 function myMove() {
 	if (givemov == 1) {
