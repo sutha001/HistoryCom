@@ -139,6 +139,11 @@ var time;
 
 var tim;
 
+var give = 0;
+var give2 = 0;
+var give3 = 0;
+var give4 = 0;
+
 function myFunction() {
 	document.getElementById("butcal").style.zIndex = 1;
 	document.getElementById("popup").style.visibility = "visible";
@@ -160,12 +165,6 @@ function myFunction() {
 	var nanosec = time / 1000000000;
 	var piccosec = time / 1000000000000;
 
-	count1();
-	count2();
-	count3();
-	count4();
-	count5();
-
 	console.log(time);
 
 	var supp = 0;
@@ -182,7 +181,7 @@ function myFunction() {
 		tim = time * 10;
 		supp = 1;
 	}
-	else if (time >= 1){
+	else if (time >= 1) {
 		tim = time;
 	}
 
@@ -197,15 +196,27 @@ function myFunction() {
 
 	document.getElementById("timesec").innerHTML = time + " second";
 	document.getElementById("timemill").innerHTML = milsec + " millisecond";
-	document.getElementById("timemicro").innerHTML = tim + "X10"+ "<sup>"+ aa +"</sup>" + " microsecond";
-	document.getElementById("timenano").innerHTML = tim + "X10"+ "<sup>"+ bb +"</sup>" + " nanosecond";
-	document.getElementById("timepic").innerHTML = tim + "X10"+ "<sup>"+ cc +"</sup>" + " picosecond";
+	document.getElementById("timemicro").innerHTML = tim + "X10" + "<sup>" + aa + "</sup>" + " microsecond";
+	document.getElementById("timenano").innerHTML = tim + "X10" + "<sup>" + bb + "</sup>" + " nanosecond";
+	document.getElementById("timepic").innerHTML = tim + "X10" + "<sup>" + cc + "</sup>" + " picosecond";
 
 	//document.getElementById("age1").disabled = false;
 	//document.getElementById("age2").disabled = false;
 	//document.getElementById("age3").disabled = false;
 	//document.getElementById("age4").disabled = false;
 	//document.getElementById("age5").disabled = false;
+
+	give += 1;
+	give2 += 1;
+	give3 += 1;
+	give4 += 1;
+
+	var timeleft = 0;
+	count1(timeleft);
+	count2(timeleft);
+	count3(timeleft);
+	count4(timeleft);
+	count5(timeleft);
 
 }
 
@@ -231,9 +242,8 @@ document.getElementById("load5").style.visibility = "hidden";
 //document.getElementById("wait5").style.visibility = "visible";
 document.getElementById("finis5").style.visibility = "hidden";
 
-function count1() {
+function count1(n) {
 	console.log("1");
-	var timeleft = 0;
 	if (time >= 0.001 && time < 0.01) {
 		tim = time * 1000;
 	}
@@ -255,30 +265,33 @@ function count1() {
 	//document.getElementById("age1").style.visibility = "hidden";
 
 	//document.getElementById("age1skip").style.visibility = "visible";
-
-
-
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (tim * 10000)) {
+		if (give >= 2) {
+			document.getElementById("load").innerHTML = 0 + " Seconds";
 			clearInterval(downloadTimer);
-			document.getElementById("load").innerHTML = "Finished " + (tim * 10000) + " Sec";
-			//document.getElementById("age1").disabled = false;
-			document.getElementById("finis").style.visibility = "visible";
-			//document.getElementById("wait").style.visibility = "hidden";
-			//document.getElementById("age1skip").disabled = true;
-		} else {
-			document.getElementById("load").innerHTML = timeleft + " Seconds";
-			//document.getElementById("age1").disabled = true;
-			document.getElementById("load").style.visibility = "visible";
-			//document.getElementById("wait").style.visibility = "hidden";
-			//document.getElementById("age1skip").disabled = false;
+			give = 1;
 		}
-		timeleft += 1;
+		else {
+			if (n >= (tim * 10000)) {
+				clearInterval(downloadTimer);
+				document.getElementById("load").innerHTML = "Finished " + (tim * 10000) + " Sec";
+				//document.getElementById("age1").disabled = false;
+				document.getElementById("finis").style.visibility = "visible";
+				//document.getElementById("wait").style.visibility = "hidden";
+				//document.getElementById("age1skip").disabled = true;
+			} else {
+				document.getElementById("load").innerHTML = n + " Seconds";
+				//document.getElementById("age1").disabled = true;
+				document.getElementById("load").style.visibility = "visible";
+				//document.getElementById("wait").style.visibility = "hidden";
+				//document.getElementById("age1skip").disabled = false;
+			}
+			n += 1;
+		}
 	}, 1000);
 }
 
-function count2() {
-	var timeleft = 0;
+function count2(n) {
 	if (time >= 0.001 && time < 0.01) {
 		tim = time * 1000;
 	}
@@ -300,27 +313,35 @@ function count2() {
 	//document.getElementById("age2skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (tim * 1000)) {
+		if (give2 >= 2) {
+			document.getElementById("load2").innerHTML = 0 + " Seconds";
 			clearInterval(downloadTimer);
-			document.getElementById("load2").innerHTML = "Finished " + (tim * 1000) + " Sec";
-			//document.getElementById("age2").disabled = false;
-			document.getElementById("finis2").style.visibility = "visible";
-			//document.getElementById("wait2").style.visibility = "hidden";
-			//document.getElementById("age2skip").disabled = true;
-
-		} else {
-			document.getElementById("load2").innerHTML = timeleft + " Seconds";
-			//document.getElementById("age2").disabled = true;
-			document.getElementById("load2").style.visibility = "visible";
-			//document.getElementById("wait2").style.visibility = "hidden";
-			//document.getElementById("age2skip").disabled = false;
-
+			give2 = 1;
 		}
-		timeleft += 1;
+		else {
+			if (n >= (tim * 1000)) {
+				clearInterval(downloadTimer);
+				document.getElementById("load2").innerHTML = "Finished " + (tim * 1000) + " Sec";
+				//document.getElementById("age2").disabled = false;
+				document.getElementById("finis2").style.visibility = "visible";
+				//document.getElementById("wait2").style.visibility = "hidden";
+				//document.getElementById("age2skip").disabled = true;
+
+			} else {
+				document.getElementById("load2").innerHTML = n + " Seconds";
+				//document.getElementById("age2").disabled = true;
+				document.getElementById("load2").style.visibility = "visible";
+				//document.getElementById("wait2").style.visibility = "hidden";
+				//document.getElementById("age2skip").disabled = false;
+
+			}
+			n += 1;
+		}
+
 	}, 1000);
 }
 
-function count3() {
+function count3(n) {
 	console.log("1");
 	var timeleft = 0;
 	if (time >= 0.001 && time < 0.01) {
@@ -345,25 +366,33 @@ function count3() {
 	//document.getElementById("age3skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (tim * 100)) {
+		if (give3 >= 2) {
+			document.getElementById("load3").innerHTML = 0 + " Seconds";
 			clearInterval(downloadTimer);
-			document.getElementById("load3").innerHTML = "Finished " + (tim * 100) + " Sec";
-			//document.getElementById("age3").disabled = false;
-			document.getElementById("finis3").style.visibility = "visible";
-			//document.getElementById("wait3").style.visibility = "hidden";
-			//document.getElementById("age3skip").disabled = true;
-		} else {
-			document.getElementById("load3").innerHTML = timeleft + " Seconds ";
-			//document.getElementById("age3").disabled = true;
-			document.getElementById("load3").style.visibility = "visible";
-			//document.getElementById("wait3").style.visibility = "hidden";
-			//document.getElementById("age3skip").disabled = false;
+			give3 = 1;
 		}
-		timeleft += 1;
+		else {
+			if (n >= (tim * 100)) {
+				clearInterval(downloadTimer);
+				document.getElementById("load3").innerHTML = "Finished " + (tim * 100) + " Sec";
+				//document.getElementById("age3").disabled = false;
+				document.getElementById("finis3").style.visibility = "visible";
+				//document.getElementById("wait3").style.visibility = "hidden";
+				//document.getElementById("age3skip").disabled = true;
+			} else {
+				document.getElementById("load3").innerHTML = n + " Seconds ";
+				//document.getElementById("age3").disabled = true;
+				document.getElementById("load3").style.visibility = "visible";
+				//document.getElementById("wait3").style.visibility = "hidden";
+				//document.getElementById("age3skip").disabled = false;
+			}
+			n += 1;
+		}
+
 	}, 1000);
 }
 
-function count4() {
+function count4(n) {
 	console.log("1");
 	var timeleft = 0;
 	if (time >= 0.001 && time < 0.01) {
@@ -375,7 +404,6 @@ function count4() {
 	else if (time >= 0.1 && time < 1) {
 		tim = time * 10;
 	}
-	var timeleft = 0;
 	document.getElementById("load4").style.visibility = "hidden";
 
 	//document.getElementById("wait4").style.visibility = "visible";
@@ -388,25 +416,32 @@ function count4() {
 	//document.getElementById("age4skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= (tim * 10)) {
+		if (give4 >= 2) {
+			document.getElementById("load4").innerHTML = 0 + " Seconds";
 			clearInterval(downloadTimer);
-			document.getElementById("load4").innerHTML = "Finished " + (tim * 10) + " Sec";
-			//document.getElementById("age4").disabled = false;
-			document.getElementById("finis4").style.visibility = "visible";
-			//document.getElementById("wait4").style.visibility = "hidden";
-			//document.getElementById("age4skip").disabled = true;
-			skip44 = 0;
-		} else {
-			document.getElementById("load4").innerHTML = timeleft + " Seconds ";
-			//document.getElementById("age4").disabled = true;
-			document.getElementById("load4").style.visibility = "visible";
-			//document.getElementById("wait4").style.visibility = "hidden";
-			//document.getElementById("age4skip").disabled = false;
+			give4 = 1;
 		}
-		timeleft += 1;
+		else {
+			if (n >= (tim * 10)) {
+				clearInterval(downloadTimer);
+				document.getElementById("load4").innerHTML = "Finished " + (tim * 10) + " Sec";
+				//document.getElementById("age4").disabled = false;
+				document.getElementById("finis4").style.visibility = "visible";
+				//document.getElementById("wait4").style.visibility = "hidden";
+				//document.getElementById("age4skip").disabled = true;
+				skip44 = 0;
+			} else {
+				document.getElementById("load4").innerHTML = n + " Seconds ";
+				//document.getElementById("age4").disabled = true;
+				document.getElementById("load4").style.visibility = "visible";
+				//document.getElementById("wait4").style.visibility = "hidden";
+				//document.getElementById("age4skip").disabled = false;
+			}
+			n += 1;
+		}
 	}, 1000);
 }
-function count5() {
+function count5(n) {
 	console.log("1");
 	var timeleft = 0;
 	if (time >= 0.001 && time < 0.01) {
@@ -418,7 +453,6 @@ function count5() {
 	else if (time >= 0.1 && time < 1) {
 		tim = time * 10;
 	}
-	var timeleft = 0;
 	document.getElementById("load5").style.visibility = "hidden";
 
 	//document.getElementById("wait5").style.visibility = "visible";
@@ -431,21 +465,29 @@ function count5() {
 	//document.getElementById("age5skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= time) {
+		if (give >= 2) {
+			document.getElementById("load5").innerHTML = 0 + " Seconds";
 			clearInterval(downloadTimer);
-			document.getElementById("load5").innerHTML = "Finished " + time + " Sec";
-			//document.getElementById("age5").disabled = false;
-			document.getElementById("finis5").style.visibility = "visible";
-			//document.getElementById("wait5").style.visibility = "hidden";
-			//document.getElementById("age5skip").disabled = true;
-		} else {
-			document.getElementById("load5").innerHTML = timeleft + " Seconds ";
-			//document.getElementById("age5").disabled = true;
-			document.getElementById("load5").style.visibility = "visible";
-			//document.getElementById("wait5").style.visibility = "hidden";
-			//document.getElementById("age5skip").disabled = false;
+			give = 1;
 		}
-		timeleft += 1;
+		else {
+			if (n >= time) {
+				clearInterval(downloadTimer);
+				document.getElementById("load5").innerHTML = "Finished " + time + " Sec";
+				//document.getElementById("age5").disabled = false;
+				document.getElementById("finis5").style.visibility = "visible";
+				//document.getElementById("wait5").style.visibility = "hidden";
+				//document.getElementById("age5skip").disabled = true;
+			} else {
+				document.getElementById("load5").innerHTML = n + " Seconds ";
+				//document.getElementById("age5").disabled = true;
+				document.getElementById("load5").style.visibility = "visible";
+				//document.getElementById("wait5").style.visibility = "hidden";
+				//document.getElementById("age5skip").disabled = false;
+			}
+			n += 1;
+		}
+
 	}, 1000);
 }
 var i1 = 0;
@@ -465,12 +507,12 @@ var speed4 = 30;
 var speed5 = 30;
 
 var i6 = 0;
-var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phone ปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์ . .' + ' ' +'คุณอาจจะเป็นคนพัฒนาขึ้นมาก็ได้ ใครจะไปรู้กันล่ะ '
+var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phone ปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์ . .' + ' ' + 'คุณอาจจะเป็นคนพัฒนาขึ้นมาก็ได้ ใครจะไปรู้กันล่ะ '
 var speed6 = 60;
 
-function typeWriter6(){
-	document.getElementById("age6coll").style.display ="contents";
-	document.getElementById("summ").style.display="none";
+function typeWriter6() {
+	document.getElementById("age6coll").style.display = "contents";
+	document.getElementById("summ").style.display = "none";
 	if (i6 < txt6.length) {
 		document.getElementById("textContent6").innerHTML += txt6.charAt(i6);
 		i6++;
@@ -566,12 +608,12 @@ function myMove() {
 		}
 		var rot = 0;
 		var id2 = setInterval(frame2, 1);
-		function frame2(){
+		function frame2() {
 			if (rot == 180) {
 				clearInterval(id2);
 			} else {
 				rot++;
-				elemnex.style.transform = "rotate("+rot+"deg)";
+				elemnex.style.transform = "rotate(" + rot + "deg)";
 			}
 		}
 		givemov = 0;
@@ -591,12 +633,12 @@ function myMove() {
 		}
 		var rot = 180;
 		var id2 = setInterval(frame2, 1);
-		function frame2(){
+		function frame2() {
 			if (rot == 0) {
 				clearInterval(id2);
 			} else {
 				rot--;
-				elemnex.style.transform = "rotate("+rot+"deg)";
+				elemnex.style.transform = "rotate(" + rot + "deg)";
 			}
 		}
 		givemov = 1;
