@@ -431,7 +431,7 @@ function count5() {
 	//document.getElementById("age5skip").style.visibility = "visible";
 
 	var downloadTimer = setInterval(function () {
-		if (timeleft >= tim) {
+		if (timeleft >= time) {
 			clearInterval(downloadTimer);
 			document.getElementById("load5").innerHTML = "Finished " + time + " Sec";
 			//document.getElementById("age5").disabled = false;
