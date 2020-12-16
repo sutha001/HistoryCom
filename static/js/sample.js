@@ -507,8 +507,19 @@ var speed4 = 30;
 var speed5 = 30;
 
 var i6 = 0;
-var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phone ปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์ . .' + ' ' + 'คุณอาจจะเป็นคนพัฒนาขึ้นมาก็ได้ ใครจะไปรู้กันล่ะ '
+var txt6 = 'เทคโนโลยีสมัยนี้พัฒนาเร็วมากและขนาดเล็กลงเรื่อยๆโดยที่เห็นในปัจจุบันคือ smart phone ปัจจุบันนี้มีการฝังชิปคอมพิวเตอร์ลงในสมองเราตัวอย่างเทคโนโลยีที่กำลังพัฒนา คือ neuralink ของ Elon Muskในอนาคตอันใกล้เราอาจจะได้เห็น ทุกสิ่งอย่างมีระบบคอมพิวเตอร์อยู่ในตัวของมันก็ได้เช่น ต้นไม้ สัตว์ . .';
 var speed6 = 60;
+
+
+function typeWriter6() {
+	document.getElementById("age6coll").style.display = "contents";
+	document.getElementById("summ").style.display = "none";
+	if (i6 < txt6.length) {
+		document.getElementById("textContent6").innerHTML += txt6.charAt(i6);
+		i6++;
+		setTimeout(typeWriter6, speed6);
+	}
+}
 
 function typeWriter6() {
 	document.getElementById("age6coll").style.display = "contents";
